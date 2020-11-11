@@ -3,7 +3,7 @@ html,body{
     height: 500px !important;
 }
 body{
-    background-color:blue;
+    /* background-color:blue; */
     margin: 0;
     width: 100% !important;
     overflow-y: overlay;
