@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("#background_image").load("background.html");
-    $("#headnavbar").load("header.html");
+    $(".headnavbar").load("header.html");
             var count = 1;
             window.setInterval(function(){
                 buttonChange();
