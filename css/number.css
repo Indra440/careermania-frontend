@@ -33,7 +33,6 @@ body{
 .colgrad {
    width: 440px;
     position: absolute;
-    z-index: -1;
     top: 145px;
     left: 35px;
     height: 450px;

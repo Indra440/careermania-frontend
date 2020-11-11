@@ -1,0 +1,137 @@
+@import "welcome.css";
+@import "bcv.css";
+@import "chatbot.css";
+@import "cources.css";
+@import "number.css";
+@import "lastpage.css";  
+
+/* Main css of this page */
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+.welcome_page{
+    width: 100%;
+    height: 800px;
+    overflow-x: hidden !important;
+    margin-bottom: 20px;
+}
+
+.bcv_page{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 20px;
+}
+
+.chatus_page{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+.learningCorners_page{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+}
+.quickPath{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+.footer_page{
+    width: 100%;
+    height: 800px;
+    background-image: url('../careermania/Background/footer.png');
+}
+
+/****************/
+
+/* Welcome page css */
+
+/* .headerpart{
+    height: 300px;
+}
+.footerpart{
+    height: 490px;
+}
+.headercontent{
+    height: 100%;
+    float: right;
+}
+.headercontent p{
+    color: blue;
+}
+ .headercontent input{
+    width: 32%;
+    border-radius: 15px;
+}
+.usericon{
+    position: absolute;
+    right: 115px;
+    top: 50px;
+    border: 10px solid white;
+    border-radius: 30px;
+    background-color: white;
+}
+.leftheaderPart img{
+    margin-left: 275px;
+    width: 140px;
+}
+.leftheaderPart p{
+    margin-left: 265px;
+    font-size: 28px;
+    margin-top: -15px;
+}
+.leftheaderPart input {
+    margin-left: 115px;
+    width: 490px;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 8px;
+}
+.rightfooterpart{
+    width: 500px;
+    height: 100%;
+    float: right;
+    margin-right: 33%;
+}
+.upper_part h2{
+    text-align: center;    
+    font-size: 44px;
+    margin-top: 100px;
+
+} */
+/* .upper_part p{
+    text-align: center;
+    font-size: 26px;
+}
+.lower_buttons{
+    width: 100%;
+    display: inline;
+    position: absolute;
+    bottom: 95px;
+    padding: 20px;
+}
+.lower_buttons button{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    border-radius: 25px;
+}
+.Classes{
+    width: 160px !important;
+}
+.rightfooterpart img{
+    position: absolute;
+    bottom: 0;
+    width: 27px;
+    height: 50px;
+    margin-left: 235px;
+} */
+
+/**********************/
