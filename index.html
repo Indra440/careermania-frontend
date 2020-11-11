@@ -19,6 +19,7 @@
         div{
             width: 100%;
             height: 800px;
+            margin-bottom: 30px;
         }
 
     </style>
@@ -53,11 +54,29 @@
         <script>
             $(function(){
                 $("#welcomepage").load("welcome.html");
-                $("#bcvpage").load("bcv.html");
-                $("#chatpage").load("chatbot.html");
-                $("#coursepage").load("cources.html");
+
+                setTimeout(() => {
+                    $("#bcvpage").load("bcv.html");
+                    
+                }, 2000);
+                setTimeout(() => {
+                    $("#chatpage").load("chatbot.html");
+                    
+                }, 2000);
+                setTimeout(() => {
+                    $("#coursepage").load("cources.html");
+                    
+                }, 2000);
+                setTimeout(() => {
+                    $("#chatpage").load("lastpage.html");
+                    
+                }, 2000);
                 // $("#welcomepage").load("welcome.html");
-                $("#chatpage").load("lastpage.html");
+                // $("#bcvpage").load("bcv.html");
+                // $("#chatpage").load("chatbot.html");
+                // $("#coursepage").load("cources.html");
+                // // $("#welcomepage").load("welcome.html");
+                // $("#chatpage").load("lastpage.html");
             })
         </script>
     </body>
