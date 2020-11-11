@@ -14,22 +14,24 @@
         html,body{
             width: 100%;
             height: 100%;
+            overflow-y: scroll;
         }
         div{
             width: 100%;
-            height: fit;
+            height: fit-content;
+            overflow-y: scroll;
         }
 
     </style>
     </head>
-    <frameset rows="*,*,*,*,*">
+    <!-- <frameset rows="*,*,*,*,*">
         <frame src="welcome.html" scorolling="auto">
             <frame src="bcv.html" scorolling="auto">
                 <frame src="chatbot.html" scorolling="auto">
                     <frame src="cources.html" scorolling="auto">
                         <frame src="lastpage.html" scorolling="auto">
-    </frameset>
-    <!-- <body>
+    </frameset> -->
+    <body>
         <div id="welcomepage">
 
         </div>
@@ -58,5 +60,5 @@
                 $("#chatpage").load("lastpage.html");
             })
         </script>
-    </body> -->
+    </body>
 </html>
