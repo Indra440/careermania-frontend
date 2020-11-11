@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    height:790px;
+    background-image: url("./careermania/Background/footer.png");
+}
+
+.hide{
+    display: none;
+}
+
+.upperpart{
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+}
+
+.middlepart{
+    width: 100%;
+    height: 410px;
+
+}
+
+.lowerpart{
+    width: 100%;
+    height: 270px;
+    display: flex;
+}
+
+.contentholder{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 12px;
+}
+.leftpart{
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+.rightpart{
+    float: right;
+    width: 80%;
+    height: 100%;
+}
+.accordion{
+    margin-top: 25px;
+}
+.card{
+    margin: 30px;
+    width: 85%;
+    border-radius: 40px !important;
+}
+
+svg{
+    fill: white;
+    float: right;
+    border: 2px solid blue;
+    background-color: blue;
+    position: absolute;
+    right: -13px;
+    top: -5px;
+    width: 72px;
+    height: 70px;
+    border-radius: 75px; 
+}
+span{
+    font-size: 20px !important;
+}
+
+.icons{
+    height: 100%;;
+}
+.links{
+    height: 100%;
+}
+.subscribe{
+    height: 100%;   
+}
+
+.image_group{
+    width: fit-content;
+    margin-left: 95px;
+}
+.linksforexternal{
+    height: 200px;
+}
+.lowername{
+    height: 70px;
+}
+table{
+    width: 100%;
+    border-collapse: initial;   
+}
+td {
+    padding-right: 30px;
+}
+.lowercontentholder{
+    margin-left: 80px;
+    height: 100%;
+}
+.lowercontentholder input{
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.contact_info{
+    margin-top: 20px;
+    float: right;
+}

@@ -1,0 +1,135 @@
+
+html,body{
+    height: 100% !important;
+}
+body{
+    background-color: blue;
+    margin: 0;
+    width: 100% !important;
+}
+.register{
+    height: 90%;
+/*
+    margin-top: 3%; 
+    padding: 3%; 
+    margin: 0;
+*/
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    margin-top: 6%;
+    background: #f8f9fa;
+    /* border-top-left-radius: 10% 50%; */
+    /* border-bottom-left-radius: 10% 50%; */
+    top:50%;
+    left: 30%;
+    border-radius: 15px;
+        
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.box{
+    min-height: 100%;
+}
+.logo{
+    display: inline;
+    left: 70px;
+    bottom: 15px;
+}
+.logo img{
+    width: 120px;
+    height: 125px;
+    margin-left: 60px;
+}
+.row{
+    margin-right: -6px;
+    margin-left: -6px;
+}
+.cword{
+    margin-left: -170px;
+    color: orange;
+    text-align: center;
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.btnSignup{
+    float: left;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: green;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.btnLogin{
+    float: right;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.footer-buttons{
+    padding: 0% 1%;
+}
+.footer_content{
+    text-align: center;
+    margin-top: -25px;
+    width: 40%;
+    margin-left: 125px;
+}
+.footer_content p{
+    margin-bottom: 0px;
+}
+.or_hr{
+    width: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.signup_hr{
+    width: 200px;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+.footer_icons{
+    margin-left: 180px;
+}
+.footer_icons img{
+    width: 33px;
+}
+
+.table{
+    margin-bottom: 0px !important;
+
+/*
+.mword{
+   color: blue;
+}
+*/

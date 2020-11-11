@@ -1,0 +1,41 @@
+html,body{
+    overflow-x: hidden;
+    overflow-y: overlay;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #dcdcdc;
+    height: 100%;
+    width : 100%;
+}
+.container{
+    background-color: #dcdcdc;
+    height : 350px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+        
+}
+.up{
+    height: 30%;
+    margin-top: 30px;
+    font-size: 32px;
+    margin-left: 40%;
+}
+
+.boderless td,tr{
+    border: none;  
+}
+.container img{
+    height: 80px;
+    width: 85px;
+}
+.table td{
+    color: darkblue;
+    padding: 1.75rem;
+    text-align: center
+}
+.cword{
+    color: orange;
+}
+.mword{
+   color: blue;
+}
