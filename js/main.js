@@ -18,7 +18,7 @@ $(document).ready(function(){
         buttonChange();
     },3000);
 
-    $("#first_page").load("background.html");
+    $("#first_page").load("./html/background.html");
 
     function buttonChange(){
         let cur_index = 0;
