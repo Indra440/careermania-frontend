@@ -1,6 +1,6 @@
 
 html,body{
-    height: 500px !important;
+    height: 100% !important;
 }
 body{
     /* background-color:blue; */
@@ -14,16 +14,6 @@ body{
 }
 .register{
     height: 100%;
-/*
-    background-color: red; 
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff); 
-    margin-top: 3%; 
-    padding: 3%; 
-    max-width: 100% !important;
-    max-height: 100% !important;
-    padding: 0;
-    margin: 0;
-*/
 }
 .table{
     margin-bottom: 0px !important;
@@ -75,10 +65,11 @@ body{
 .register-right{
     margin-top: 6%;
     background: white;
+    width: 80%;
     /* border-top-left-radius: 10% 50%; */
     /* border-bottom-left-radius: 10% 50%; */
     /* top:50%; */
-    left: 12%;
+    left: 13%;
     height: fit-content;
     border-radius: 15px;
     padding-left: 10px;
@@ -225,9 +216,8 @@ input{
 }
 .footer_content{
     text-align: center;
-    margin-top: -25px;
     width: 40%;
-    margin-left: 250px;
+    margin-left: 255px;
 }
 .footer_content p{
     margin-bottom: 0px;
@@ -243,8 +233,118 @@ input{
     margin-bottom: 1rem;
 }
 .footer_icons{
-    margin-left: 380px;
+    margin-left: 385px;
 }
 .footer_icons img{
     width: 33px;
+}
+@media(max-width:1024px) {
+    .footer_icons {
+    margin-left: 325px;
+}
+    .footer_content {
+    width: 40%;
+    margin-left: 220px;
+     }
+}
+
+ @media screen and (min-width:500px) and (max-width:770px) {
+    .footer_icons {
+    margin-left: 230px;
+     } 
+     .footer_content {
+    width: 40%;
+    margin-left: 165px;
+     }
+     .register .register-form {
+    font-size: 14px;
+}
+     .register .register-form table td {
+    font-size: 14px;
+}
+     .btn-group {
+    left: 10%;
+}
+}
+@media(max-width:480px){
+    .head_name_input {
+    display: inline;
+        width: 73%;
+    }
+    .register-right {
+        width: 90% !important;
+        left: 5%;
+    }
+    .btn-group {
+    left: 20px;
+}
+    button.btn.btn-primary {
+    font-size: 14px;
+}
+    .footer_content {
+    font-size: 14px;
+    width: 40%;
+    margin-left: 110px;
+}
+    .footer_icons {
+    margin-left: 145px;
+}
+    .signup_hr {
+    width: 140px;
+}
+}
+@media (max-width: 380px){
+.head_name_input {
+    display: inline;
+    width: 70%
+    }
+.btn-group {
+    left: 10px;
+}
+.footer_content {
+    width: 40%;
+    margin-left: 95px;
+}
+.footer_icons {
+    margin-left: 125px;
+}
+    .signup_hr {
+    width: 130px;
+}
+    .footer_icons img {
+    width: 30px;
+}
+}
+@media (max-width: 325px){
+.btn-group {
+    left: -5px;
+}
+.footer_content {
+    font-size: 12px;
+    width: 40%;
+    margin-left: 80px;
+}
+.footer_icons {
+    margin-left: 100px;
+}
+button.btn.btn-primary{
+        font-size: 12px;
+    }
+    .register .register-form {
+    font-size: 12px;
+}
+     .register .register-form table td {
+    font-size: 12px;
+}
+    .signup_hr {
+    width: 110px;
+}
+    .footer_icons img {
+    width: 28px;
+}
+    .head_name_input {
+    display: inline;
+    width: 64%
+    }
+
 }

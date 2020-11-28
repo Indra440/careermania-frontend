@@ -1,425 +1,560 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>Careermaniaa</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>Careermaniaa</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./vendor/font-awesome/all.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-</head>
+  </head>
 
-<body>
-    <div class="welcome_page col-md-12">
-        <div id="background_image">
-
-        </div>
-        <div class="col-md-12 headerpart">
-            <div class="col-md-9 headercontent">
-              <div class="leftheaderPart">
-                <img src="./careermania/logo.png">
-                <p><span style="color: white;">Career</span>Mania</p>
-                <input type="text" class="form-control" placeholder="Search"/>
-              </div>
-                <div class="usericon">
+    <body>
+      <!--Welcome page strt from here ***************************-->
+          <div class="welcome_page col-md-14" id="first_page">
+            <!-- <div id="background_image">
+            </div> -->
+              <div class="headerpart">
+                <!-- <div class="headercontent"> -->
+                <div class="logoandlogin">
+                  <div class="logo">
+                    <img src="./careermania/logo.png">
+                  </div>
+                  <div class="usericon">
                     <a href="./html/login.html"><img src="./careermania/usericon.png"></a>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-12 footerpart">
-          <div class="rightfooterpart">
-            <div class="upper_part">
-              <h2>Welcome</h2>
-              <p style="padding-top:5px;">To the India's fastest growing </p>
-              <p>educational platform</p>
-            </div>
-              <div class="lower_buttons">
-                <button class="btn btn-primary Classes">Classes</button>
-                <button class="btn btn-primary">Colleges</button>
-                <button class="btn btn-primary">Jobs</button>
+                <div class="namesearch">
+                  <p><span style="color: white;">Career</span><span style="color: skyblue;">Maniaa</span></p>
+                  <input type="text" class="form-control" placeholder="Search"/>
+                </div>
               </div>
-            <img src="./careermania/lower_footer.png">
+            <div class="col-md-14 footerpart">
+              <!-- <div class="rightfooterpart"> -->
+                <div class="upper_part">
+                  <h1>Welcome</h1>
+                  <p style="padding-top:5px;">To the India's fastest growing</p>
+                  <p>educational platform</p>
+                </div>
+                  <div class="lower_buttons">
+                    <button class="btn btn-primary Classes">Classes</button>
+                    <button class="btn btn-primary">Colleges</button>
+                    <button class="btn btn-primary">Jobs</button>
+                  </div>
+                <a href="#sevices_page"><img src="./careermania/lower_footer.png"></a>
+              <!-- </div> -->
+            </div>
           </div>
-        </div>
+      <!--Welcome page end here ***************************-->
 
-    </div>
+        <!--Bcv page start from here *****************************-->
 
-    <div class="bcv_page col-md-12">
-        <div class="headnavbar">
-
-        </div>
-        <div class="col-md-12 upperpart">
+        <div class="col-md-14 bcv_page">
+          <div id="total_navbar">
+              <div id="navbar" class="col-md-14">
+                <div class="col-md-4 logo">
+                    <img src="./careermania/logo.png">
+                </div>
+                <div class="col-md-8 top_rig">
+                    <div id = "menu_content">
+                      <span><a href=""> Home </a></span>
+                      <span><a href=""> About us </a></span>
+                      <span><a href=""> Services</a></span>
+                      <span><a href="">Contact us </a></span>
+                    </div>
+                    <a href="javascript:void(0);" id="hamburgericon">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="./html/login.html"><span><img src="./careermania/usericon.png"></span></a>
+                </div>
+              </div>
+            <div id="hamburgerMenu" class="col-md-14">
+              <a href=""> Home </a>
+              <a href=""> About us </a>
+              <a href=""> Services</a>
+              <a href="">Contact us </a>
+            </div>
+          </div>
+          <div class="col-md-14 bcv_upperpart">
             <input type="text" class="form-control" placeholder="Search"/>
-        </div>
-        <div class="col-md-12 downpart">
-            <div class="col-md-6 leftpart">
-                <div class="content_holder">
-                    <img src="./Background/bcv1.png" class="background_shape">
-                    <img src="./Background/bcv2.png" class="man_reading">
-                    <img src="./Background/lamp.png" class="lamp">
-                </div>
-            </div>
-            <div class="col-md-6 rightpart">
-                <div class="rightpart_content_holder">
-                    <p>Career Mania is the one roof solution</p>
-                    <p>To grow your</p>
-                    <div id="button_group">
-                        <button class="btn btn-primary showhidebutton">Buisness</button>
-                        <button class="btn btn-primary showhidebutton hide">Career</button>
-                        <button class="btn btn-primary showhidebutton hide">Value</button>
+          </div>
+            <div class="col-md-14 bcv_downpart">
+              <div class="col-md-6 leftpart">
+                  <div class="content_holder">
+                      <img src="./Background/bcv1.png" class="background_shape">
+                      <img src="./Background/bcv2.png" class="man_reading">
+                      <img src="./Background/lamp.png" class="lamp">
+                  </div>
+              </div>
+              <div class="col-md-6 rightpart">
+                    <div class="rightpart_content_holder">
+                        <p>Career Mania is the one roof solution</p>
+                        <p>To grow your</p>
+                      <div id="button_group">
+                          <button class="btn btn-primary showhidebutton">Buisness</button>
+                          <button class="btn btn-primary showhidebutton hide">Career</button>
+                          <button class="btn btn-primary showhidebutton hide">Value</button>
+                      </div>
+                        <p>Join now to grow your</p>
+                        <p>Situation</p>
+                      <div class="contact_button">
+                        <button class="btn btn-primary">Join</button>
+                        <button class="btn btn-primary">Contact</button>
+                      </div>
                     </div>
-                    <p>Join now to grow your</p>
-                    <p>Situation</p>
-                </div>
+              </div>
             </div>
         </div>
-    </div>
+        <!--Bcv page end here *****************************-->
 
-    <div class="chatus_page col-md-12">
-        <div class="headnavbar">
-
-        </div>
-
-        <div class="col-md-12 main_content">
-            <div class="col-md-6 left_part">
-                <ul>
-                    <li>
-                        <img src="./Background/business.png">
-                        <span>
-                            <p>Develop Business</p>
-                            <p>Get insights to improve the reach of your business</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="./Background/meeting.png">
-                        <span>
-                            <p>10 times more engagement</p>
-                            <p>Find millions of new students for your coaching classes</p>
-                        </span>
-                    </li>
-                    <li>
-                        <img src="./Background/technology_meet.png">
-                        <span>
-                            <p>Technology meets management</p>
-                            <p>Hassle-free management with careermania to boost your revenue...</p>
-                        </span>
-                    </li>
-                </ul>
+        <!--Chatbot page start from here ***********************-->
+        <div class="col-md-14 chatbot_page">
+            <div class="col-md-6 chatbot_left_part">
+              <div class="single_item">
+                <img src="./Background/business.png">
+                <span class="develop_content">
+                    <p>Develop Business</p>
+                    <p>Get insights to improve the reach of your business...</p>
+                </span>
+              </div>
+              <div class="single_item">
+                <img src="./Background/meeting.png">
+                <span>
+                    <p>10 times more engagement</p>
+                    <p>Find millions of new students for your coaching classes...</p>
+                </span>
+              </div>
+              <div class="single_item">
+                <img src="./Background/technology_meet.png">
+                <span>
+                    <p>Technology meets management</p>
+                    <p>Hassle-free management with careermania to boost your revenue...</p>
+                </span>
+              </div>
             </div>
-            <div class="col-md-6 right_part">
-                <div class="chatbot_background">
-                    <img src="./Background/gradient _other _page.png">
+
+            <div class="col-md-6 chatbot_right_part">
+              <div class="chatbot_background">
+                <img src="./Background/gradient _other _page.png">
+              </div>
+              <div class="chatbot_div">
+                <div class="chatbot_heading">
+                    <p>Lets Talk the possibilities</p>
+                    <hr style="background-color: #e2deed;;">
                 </div>
-                <div class="chatbot_div">
-                    <div class="chatbot_heading">
-                        <p>Lets Talk the possibilities</p>
-                        <hr style="background-color: #e2deed;;">
+                <div class="chatbot_buttons">
+                    <button class="btn btn-primary active chatbutton" value="chat">Chat us</button>
+                    <button class="btn btn-primary chatbutton" value="custom message">Drop a cutom message</button>
+                </div>
+                <div class="chat_functionality">
+                    <div class="chat_space">
+
                     </div>
-                    <div class="chatbot_buttons">
-                        <button class="btn btn-primary active chatbutton" value="chat">Chat us</button>
-                        <button class="btn btn-primary chatbutton" value="custom message">Drop a cutom message</button>
+                    <div class="message_input">
+                        <input id="chat_input" type="text" class="form-control" placeholder="Ask to us"/>
+                        <a href="#chat_input" id="chat_send"><img src="./careermania/send.png"></a>
                     </div>
-                    <div class="chat_functionality">
-                        <div class="chat_space">
-    
+                </div>
+                <div class="custom_message hide">
+                    <div class="message-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Ask to us"/>
                         </div>
-                        <div class="message_input">
-                            <input id="chat_input" type="text" class="form-control" placeholder="Ask to us"/>
-                            <a href="#chat_input" id="chat_send"><img src="./careermania/send.png"></a>
+                        <div class="form-group">
+                            <label>Mobile</label>
+                            <input type="text" class="form-control" placeholder="Ask to us"/>
                         </div>
-                    </div>
-                    <div class="custom_message hide">
-                        <div class="message-form">
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Ask to us"/>
-                            </div>
-                            <div class="form-group">
-                                <label>Mobile</label>
-                                <input type="text" class="form-control" placeholder="Ask to us"/>
-                            </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="text" class="form-control" placeholder="Ask to us"/>
-                            </div>
-                            <div class="form-group">
-                                <label>message</label>
-                                <textarea class="form-control"></textarea>
-                            </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Ask to us"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="submit_button">
                             <button class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
+        <!--Chatbot page end here ***********************-->
 
-    <div class="learningCorners_page col-md-12">
+        <!-- Cources page start from here *********************-->
 
-        <div class="headnavbar">
-
-        </div>
-       <div class="col-md-12 up"> Learning Corners<br> at <span class="cword">Career</span><span class="mword">Maniaa </span>
-        </div>
-	<div class="course_container col-md-9">
-        <table class="table boderless">
-            <tr>
-                <td >
-                    <img src="./careermania/schooling.png" >
-                    <br>Schooling<br> Upto +2</td>
-                <td>
-                    <img src="./careermania/art.png">
-                    <br> &nbsp; &nbsp; Art <br>Classes</td>
-                <td>
-                    <img src="./careermania/coding.png">
-                    <br>Coding and <br>Languages</td>
-                <td>
-                    <img src="./careermania/dance.png">
-                    <br> &nbsp; &nbsp;Dance <br>&nbsp;Classes</td>
-                <td>
-                    <img src="./careermania/self.png">
-                    <br>&nbsp; &nbsp; &nbsp;Self <br>&nbsp;Defence</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./careermania/medical.png">
-                    <br> &nbsp;&nbsp;Medical<br> &nbsp;Classes</td>
-                <td>
-                    <img src="./careermania/engg.png">
-                    <br>Enggeering <br>&nbsp;&nbsp;Classes</td>
-                <td>
-                    <img src="./careermania/singing.png">
-                    <br>&nbsp;&nbsp; &nbsp;Singing <br>&nbsp;&nbsp; &nbsp;Classes</td>
-                <td>
-                    <img src="./careermania/finance.png">
-                    <br>&nbsp; &nbsp;Finance <br>&nbsp; &nbsp;Studies</td>
-                <td>
-                    <img src="./careermania/tech.png">
-                    <br>Technical<br> &nbsp;&nbsp; &nbsp;Skills</td>
-            </tr>
-        </table>
-     </div>
-
-    </div>
-
-    <div class="col-md-12 quickPath">
-
-        <div class="headnavbar">
-
-        </div>
-        <div class="col-md-12 uprpart">
-            <div class="col-md-4 line">
-            Quick path to start with 
-            <br>
-            CareerManiaa</div>
-        </div>
-        <div class="col-md-12 dnpart">
-            <div class="col-md-4 lefpart">
-                <div class="cont_holder">
-                    <img src="./Background/other.png" class="colgrad">
-                    <img src="./Background/showpot.png"class="pot">
+        <div class="col-md-14 cources_page" id="sevices_page">
+              <div class="up">
+                <p> Learning Corners at<br>
+                <span class="cword">Career</span>
+                <span class="mword">Maniaa </span></p>
+              </div>
+              <div class="contpart">
+                <div class="course_container col-md-10">
+                    <div class="module col-md-2">
+                        <div class="main_course_module">
+                            <div class="schl">
+                                <img src="./careermania/schooling.png" class="courceimage" >
+                                <p>Schooling <br>Upto +2</p>
+                            </div>
+                            <div class="med">
+                                <img src="./careermania/medical.png" class="courceimage">
+                                <p>Medical<br>Classes</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module col-md-2">
+                        <div class="main_course_module">
+                            <div class="art">
+                                <img src="./careermania/art.png"  class="courceimage">
+                                <p>Art <br>Classes</p> 
+                            </div>
+                            <div class="engg">
+                                <img src="./careermania/engg.png" class="courceimage">
+                                <p>Enggeering <br>Classes</p> 
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="module col-md-2">
+                        <div class="main_course_module">
+                            <div class="cod">
+                                <img src="./careermania/coding.png"  class="courceimage">
+                                <p>Coding and <br>Languages</p> 
+                            </div>
+                            <div class="sing">
+                                <img src="./careermania/singing.png" class="courceimage">
+                                <p>Singing <br>Classes</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module col-md-2">
+                        <div class="main_course_module">
+                            <div class="dan">
+                                <img src="./careermania/dance.png"  class="courceimage">
+                                <p>Dance <br>Classes</p> 
+                            </div>
+                            <div class="fin">
+                                <img src="./careermania/finance.png" class="courceimage">
+                                <p>Finance <br>Studies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module col-md-2">
+                        <div class="main_course_module">
+                            <div class="self">
+                                <img src="./careermania/self.png" class="courceimage">
+                                <p>Self <br>Defence</p>
+                            </div>
+                            <div class="tech">
+                                <img src="./careermania/tech.png" class="courceimage">
+                                <p>Technical<br>Skills</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8 rigpart">
+          </div>
+        <!--Cources page end here-->
+
+            <!--Number page start from here *****************************-->
+          <div class="col-md-14 number_page">
+            <div class="col-md-14 uprpart line">
+              <p>
+              Quick path to start with 
+              <br>
+              CareerManiaa
+              </p>
+            </div>
+            <div class="col-md-14 dnpart">
+              <div class="col-md-6 lefpart">
+                <div class="lefpart_cont_holder">
+                  <img src="./Background/other.png" class="colgrad">
+                  <img src="./Background/showpot.png"class="pot">
+                </div>
+              </div>
+              <div class="col-md-6 rigpart">
                 <div class="rigpart_cont_holder">
                     <div class="row cont1">
-                        <div class="col-md-9 line1">Register with us and fill all the required details</div>
-                        <div class="col-md-3">
-                            <img src="./Background/noone.png">
+                      <div class="col-md-9 line1">Register with us and fill all the required details</div>
+                        <div class="col-md-3 img1">
+                          <img src="./Background/noone.png">
                         </div>
                     </div>
-                    <div class="row cont2">
-                        <div class="col-md-7 okpic line2 ">Login to explore the endless possiblities post verification <img src="../Background/ok.png"> </div>
-                        <div class="col-md-5">
-                            <img src="./Background/notwo.png">
-                        </div>
-                    </div>
-    
+                  <div class="row cont2">
+                      <div class="col-md-7 okpic line2 ">Login to explore the endless possiblities post verification <img src="./Background/ok.png"> </div>
+                      <div class="col-md-5 img2">
+                          <img src="./Background/notwo.png">
+                      </div>
+                  </div>
                     <div class="row cont3">
-                        <div class="col-md-5 line3">Connect with the students</div>
-                        <div class="col-md-7">
-                            <img src="./Background/nothree.png">
+                      <div class="col-md-5 line3">Connect with the students</div>
+                        <div class="col-md-7 img3">
+                          <img src="./Background/nothree.png">
                         </div>
                     </div>
-    
-                </div>    
+                  </div>    
+                </div>
             </div>
-        </div>
+          </div>
+        <!--Number page end from here *****************************-->
+        
+        <!--Last page start from here *****************************-->
+          <div class="col-md-14 last_page">
+            <div class="col-md-14 last_page_upperpart">
+              <p>FAQs for CareerMania</p>
+            </div>
 
-    </div>
+            <div class="col-md-14 middlepart">
+              <div class="contentholder">
+                  <div class="col-md-6 leftpart">
+                      <div class="accordion" id="accordionExample">
+                          <div class="card">
+                              <div class="card-header" id="headingOne">
+                                  <span class="mb-0">what will careermania charge me after joining</span>
+                              </div>
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                                  </div>
+                              </div>
+                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseOne" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                          </div>
+      
+                          <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                  <span class="mb-0">Which documents are required for online registering ? </span>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                                  </div>
+                              </div>
+                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseTwo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                          </div>
+      
+                          <div class="card">
+                              <div class="card-header" id="headingThree">
+                                  <span class="mb-0">What if I am unable to give admission...</span>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                                  </div>
+                              </div>
+                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseThree" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 rightpart">
+                      <div class="accordion" id="accordionExamples">
+                          <div class="card">
+                              <div class="card-header" id="headingFour">
+                                  <span class="mb-0">what will careermania charge me after joining</span>
+                              </div>
+                              <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExamples">
+                                  <div class="card-body">
+                                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                                  </div>
+                              </div>
+                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseFour" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                          </div>
+      
+                          <div class="card">
+                              <div class="card-header" id="headingFive">
+                                  <span class="mb-0">Which documents are required for online registering ? </span>
+                              </div>
+                              <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExamples">
+                                  <div class="card-body">
+                                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                                  </div>
+                              </div>
+                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseFive" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                          </div>
+      
+                          <div class="card">
+                              <div class="card-header" id="headingSix">
+                                  <span class="mb-0">What if I am unable to give admission...</span>
+                              </div>
+                              <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExamples">
+                                  <div class="card-body">
+                                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                                  </div>
+                              </div>
+                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseSix" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-    <div class="col-md-12 footer_page">
-        <div class="headnavbar">
-
-        </div>
-        <div class="col-md-12 upperpart">
-            <p>FAQs for CareerMania</p>
-        </div>
-        <div class="col-md-12 middlepart">
-            <div class="contentholder">
-                <div class="col-md-6 leftpart">
-                    <div class="accordion" id="accordionExample">
+              <div class="contentholder_mobile">
+                <div class="col-md-12">
+                    <div class="accordion" id="newaccordionExample">
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="newheadingOne">
                                 <span class="mb-0">what will careermania charge me after joining</span>
                             </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div id="newcollapseOne" class="collapse" aria-labelledby="headingThree" data-parent="#newaccordionExample">
                                 <div class="card-body">
                                     <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
                                 </div>
                             </div>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseOne" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#newcollapseOne" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                               </svg>
                         </div>
     
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="newheadingTwo">
                                 <span class="mb-0">Which documents are required for online registering ? </span>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div id="newcollapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#newaccordionExample">
                                 <div class="card-body">
                                     <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
                                 </div>
                             </div>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseTwo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#newcollapseTwo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                               </svg>
                         </div>
     
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="newheadingThree">
                                 <span class="mb-0">What if I am unable to give admission...</span>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div id="newcollapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#newaccordionExample">
                                 <div class="card-body">
                                     <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
                                 </div>
                             </div>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseThree" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#newcollapseThree" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                               </svg>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 rightpart">
-                    <div class="accordion" id="accordionExamples">
+
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="newheadingFour">
                                 <span class="mb-0">what will careermania charge me after joining</span>
                             </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExamples">
+                            <div id="newcollapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#newaccordionExample">
                                 <div class="card-body">
                                     <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
                                 </div>
                             </div>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseFour" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#newcollapseFour" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                               </svg>
                         </div>
     
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="newheadingFive">
                                 <span class="mb-0">Which documents are required for online registering ? </span>
                             </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExamples">
+                            <div id="newcollapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#newaccordionExample">
                                 <div class="card-body">
                                     <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
                                 </div>
                             </div>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseFive" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#newcollapseFive" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                               </svg>
                         </div>
     
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="newheadingSix">
                                 <span class="mb-0">What if I am unable to give admission...</span>
                             </div>
-                            <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExamples">
+                            <div id="newcollapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#newaccordionExample">
                                 <div class="card-body">
                                     <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
                                 </div>
                             </div>
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#collapseSix" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus collapsed" data-toggle="collapse" data-target="#newcollapseSix" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                               </svg>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+                <div class="col-md-12 lowerpart">
+                  <div class="col-md-3 icons">
+                      <div class="image_group">
+                          <img src="./careermania/fbicon.png">
+                          <img src="./careermania/twittericon.png">
+                          <img src="./careermania/gmailicon.png">
+                      </div>
+                  </div>
+                  <div class="col-md-4 links">
+                      <div class="col-md-12 linksforexternal">
+                        <ul>
+                          <li>Home</li>
+                          <li>Abut Us</li>
+                          <li>Services</li>
+                          <li>Contact</li>
+                          <li>Us</li>
+                          <li>FAQ</li>
+                          <li>Career</li>
+                        </ul>
+                        <ul>
+                          <li>Learning</li>
+                          <li>10+2</li>
+                          <li>Investor</li>
+                          <li>Undertakling program</li>
+                          <li>Student area</li>
+                          <li>Get demo</li>
+                        </ul>
+                        <ul>
+                          <li>Book a call</li>
+                          <li>T&C</li>
+                          <li>Privacy</li>
+                          <li>More from Us</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-12 lowername">
+                          <p>CareerManiaa - 2020</p>
+                      </div>
+                  </div>
+                    <div class="col-md-5 subscribe">
+                        <div class=" col-md-10 lowercontentholder">
+                          <input type="text" class="form-control" placeholder="Enter your email address"/>
+                            <div class="contact_info">
+                              <p>CareerManiaa EDUCATION PRIVATE LIMITED</p>
+                              <p>Plot no 123,Chandigarh,</p>
+                              <p>+919876543210</p>
+                              <p>hi@careermaniaa.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <a href="#demo" class="btn btn-primary" data-toggle="collapse">Simple collapsible</a>
-            <div id="demo" class="collapse">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div> -->
-    
-        </div>
-        <div class="col-md-12 lowerpart">
-            <div class="col-md-3 icons">
-                <div class="image_group">
-                    <img src="./careermania/fbicon.png">
-                    <img src="./careermania/twittericon.png">
-                    <img src="./careermania/gmailicon.png">
-                </div>
-            </div>
-            <div class="col-md-4 links">
-                <div class="col-md-12 linksforexternal">
-                    <table>
-                        <tr>
-                            <td>Home</td>
-                            <td>Learning</td>
-                            <td>Book a call</td>
-                        </tr>
-                        <tr>
-                            <td>Abut Us</td>
-                            <td>10+2</td>
-                            <td>T&C</td>
-                        </tr>
-                        <tr>
-                            <td>Services</td>
-                            <td>Investor</td>
-                            <td>Privacy</td>
-                        </tr>
-                        <tr>
-                            <td>Contuct Us</td>
-                            <td>Undertakling program</td>
-                            <td>More from us</td>
-                        </tr>
-                        <tr>
-                            <td>FAQ</td>
-                            <td>Student area</td>
-                        </tr>
-                        <tr>
-                            <td>Career</td>
-                            <td>Get demo</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-md-12 lowername">
-                    <p>CareerManiaa - 2020</p>
-                </div>
-            </div>
-            <div class="col-md-5 subscribe">
-                <div class=" col-md-10 lowercontentholder">
-                    <input type="text" class="form-control" placeholder="Enter your email address"/>
-                    <div class="contact_info">
-                        <p>CareerManiaa EDUCATION PRIVATE LIMITED</p>
-                        <p>Plot no 123,Chandigarh,</p>
-                        <p>+919876543210</p>
-                        <p>hi@careermaniaa.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--Last page end here *******************************-->
 
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+      <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script> -->
+      <script src="./vendor/jquery/jquery-3.5.1.min.js"></script>
+      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script> -->
+      <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+    </body>
 </html>

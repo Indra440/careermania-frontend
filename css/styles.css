@@ -1,26 +1,1379 @@
-@import "welcome.css";
+/* @import "welcome.css";
 @import "bcv.css";
 @import "chatbot.css";
 @import "cources.css";
 @import "number.css";
-@import "lastpage.css";  
+@import "lastpage.css";   */
 
 /* Main css of this page */
 html,body{
-    height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden !important;
+    height: 100%;
+    background-color: #f1f1f1;
+    /* overflow-y: scroll; */
 }
 
+.hide{
+    display: none !important;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/**************************************************************/
+/*welcome page css start */
 .welcome_page{
     width: 100%;
     height: 800px;
-    overflow-x: hidden !important;
-    margin-bottom: 20px;
 }
 
+.headerpart{
+    height: 330px;
+/*    background-color: green;*/
+}
+
+.footerpart{
+    height: fit-content;
+/*    background-color: blue;*/
+}
+/* .headercontent{
+    display: flex;
+} */
+.headerpart > .logoandlogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerpart > .logoandlogin > .logo img{
+    width: 130px;
+    height: 130px;
+}
+
+
+.headerpart > .logoandlogin > .usericon{
+    background-color: white;
+    border: 12px solid white;
+    border-radius: 150px;
+    position: absolute;
+    right: 120px;
+}
+.usericon > a img{
+    width: 20px;
+    height: 22px;
+}
+
+.headerpart .namesearch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.namesearch > p {
+    font-size: 24px;
+}
+
+.namesearch input{
+    width: 32%;
+    border-radius: 20px;
+}
+
+.footerpart{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerpart .upper_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+.upper_part > h1{
+    color: skyblue;
+}
+.upper_part > p{
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.footerpart .lower_buttons{
+    margin-top: 30px;
+}
+.footerpart .lower_buttons button{
+    margin: 10px;
+    border-radius: 20px;
+    padding: 8px;
+    width: 120px;
+/*    width: 30%;*/
+}
+.footerpart img{
+    width: 25px;
+    height: 35px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+ 
+}
+/* welcome page css end */
+/**********************************************************/
+/* bcv page css start */
 .bcv_page{
+    width: 100%;
+    height: 850px;
+}
+/* Navbar stared */
+.bcv_page #navbar{
+    background-color: orange; 
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+.bcv_page #total_navbar{
+    z-index: 2;
+    width: 100%;
+}
+
+.bcv_page #navbar .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bcv_page #navbar .logo img{
+    width: 110px;
+    height: 95px;
+}
+
+.bcv_page #navbar .top_rig{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 0px;
+    padding-right: 50px;
+}
+.top_rig img{
+    width: 42px;
+    background-color: white;
+    border: 12px solid white;
+    border-radius: 150px;
+}
+#hamburgerMenu{
+    background-color: orange;
+    display: none;
+}
+#hamburgerMenu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#hamburgericon{
+  color: white;
+  padding-right: 20px;
+}
+
+#hamburgerMenu a{
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+#menu_content{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Navbar ended */
+
+.bcv_upperpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bcv_upperpart input{
+    margin-top: 100px;
+    width: 32%;
+    border-radius: 15px;
+}
+.bcv_downpart{
+    width: 100%;
+    height: 600px;
+}
+
+.bcv_downpart .leftpart{
+    height: 600px;
+    float: left;
+    overflow: hidden !important;
+}
+
+.bcv_downpart .leftpart .content_holder{
+    margin-left: 100px;
+}
+
+.bcv_downpart .leftpart .content_holder .background_shape{
+    width: 740px;
+    position: absolute;
+    /* z-index: -1; */
+    top: -65px;
+    left: -45px;
+}
+.bcv_downpart .leftpart .content_holder .man_reading {
+    position: absolute;
+    z-index: 1;
+    width: 280px;
+    left: 223px;
+    bottom: 0;
+}
+.bcv_downpart .leftpart .content_holder .lamp{
+    position: absolute;
+    width: 227px;
+    left: 67px;
+    bottom: 0;
+}
+.bcv_downpart .rightpart{
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.bcv_downpart .rightpart .rightpart_content_holder{
+    float: right;
+    text-align: right;
+    margin-top: 100px;
+    font-size: 30px;
+    padding-right: 90px;
+}
+.showhidebutton{
+    width: 200px;
+}
+.bcv_downpart .rightpart .rightpart_content_holder .contact_button{
+    margin-top: 85px;
+}
+
+/*bcv page css end */
+/*************************************************************/
+/* chatbot page strted */
+    .chatbot_page{
+        width: 100%;
+        height: 650px;
+        margin-top: 100px;
+        display: inline-flex;
+    }
+
+    .chatbot_left_part{
+        display: flex;
+        flex-direction: column;
+    }
+    .chatbot_left_part .single_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+    .chatbot_left_part .single_item img {
+        width: 120px;
+    }
+    .chatbot_left_part .single_item span{
+        padding: 37px;
+        margin-left: 50px;
+        height: fit-content;
+    }
+    .chatbot_right_part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow :hidden;
+    }
+    .chatbot_background{
+        position: absolute;
+        z-index: -1;
+        top: -90px;
+    }
+    .chatbot_background img{
+        width: 670px;
+    }
+    .chatbot_div{
+        position: absolute;
+        z-index: 1;
+        height: 500px;
+        width: 450px;
+        background-color: #e8e8e8;
+        opacity: 0.9;
+        border: 2px solid #0000ff42;
+        padding: 5px;
+        right: 150px;
+    }
+    .chatbot_heading{
+        text-align: center;
+        width: 100%;
+        height: 55px;
+    }
+    .chatbot_heading p{
+        font-size: 20px;
+    }
+    .chatbot_buttons{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        z-index:1;
+    }
+    .chat_space{
+        position: absolute;
+        z-index: 1;
+        width: 98%;
+        height: 292px;
+        bottom: 101px;
+        overflow-y: scroll;
+    }
+
+    /*chat message code*/
+
+
+    .container {
+        border: 2px solid #dedede;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .darker {
+        border-color: #ccc;
+        background-color: #ddd;
+    }
+    
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .container img {
+        float: left;
+        max-width: 60px;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    
+    .container img.right {
+        float: right;
+        margin-left: 20px;
+        margin-right:0;
+    }
+  
+/* chat message code end*/
+
+    .message_input{
+        position: absolute;
+        bottom: 30px;
+        width: 370px;
+        left: 35px;
+    }
+    .message_input input{
+        height: 65px;
+        border-radius: 15px;
+    }
+    .message_input img{
+        width: 30px;
+    }
+    .message_input a{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .form-group {
+        display: inline-flex;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    .form-group label{
+        width: 50px;
+    }
+    .from-control{
+        padding: 0px !important;
+        margin-left: 15px;
+    }
+    .form-group input,textarea {
+        padding: 0px !important;
+        margin-left: 15px;   
+    }
+    .message-form input,textarea{
+        width: 325px;
+        height: 50px;
+    }
+    .message-form textarea{
+        width: 325px;
+        height: 100px;
+    }
+    .message-form{
+        width: 100%;
+        height: 290px;
+        position: absolute;
+        bottom: 100px;
+        padding-top: 25px;
+    }
+    .message-form .submit_button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Chatbot page ended */
+/****************************************************/
+
+/* Cources page started */
+    .cources_page{
+        width: 100%;
+        height: 600px;
+    }
+    .cources_page .up{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        width: 100%;
+        font-size: 32px;
+    }
+    .cources_page .up p{
+        text-align: center;
+    }
+    .cources_page .up .cword{
+        color: orange;
+    }
+    .cources_page .up .mword{
+       color: blue;
+    }
+    .cources_page .contpart{
+        height : 350px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cources_page .contpart .course_container{
+        display: flex;
+        flex-direction: row;
+        /* background-color: #dcdcdc; */
+        height : 350px;
+        width : 700px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .module{
+        color: blueviolet;
+        display: flex;
+        flex-direction:column;
+    }
+    .courceimage {
+        text-align: center;
+        height: 90px;
+        width: 120px;
+    }
+    .main_course_module{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .schl, .med, .art, .engg, .cod, .sing, .dan, .fin, .self, .tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*Cources page ended */
+
+/*********************************************************/
+
+/* Number page started */
+    .number_page {
+        width: 100%;
+        height:670px;
+    }
+    .uprpart{
+        display: flex;
+        width: 100%;
+        height: 120px;
+    }
+    .line{
+        color: darkseagreen;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        margin-left: 00px;
+    }
+    .uprpart p{
+        text-align: center;
+        
+    }
+    .dnpart{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: row;
+    }
+    .lefpart{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        float: left;
+        overflow: hidden !important;
+    }
+    .colgrad {
+        z-index: 0;
+        width: 440px;
+        position: absolute;
+        top: 145px;
+        left: 35px;
+        height: 450px;
+
+    }
+    .pot {
+        position: absolute;
+        z-index: 1;
+        width: 140px;
+        left: 170px;
+        bottom: -45px;
+        height: 365px;
+    }
+    .rigpart{
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+    .rigpart_cont_holder {
+        z-index: 0;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 20px;
+        padding-left: 00px;
+        width: 100%;
+        padding-right: 00px;    
+        display: flex;
+        flex-direction: column;
+    }
+    .cont1{
+        text-align: left;
+        width: 100%;
+        height: 150px;
+    }
+    .line1, .line2, .line3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img1, .img2, .img3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .cont1 img{
+        width: 135px;
+        height: 135px;
+    }
+    .cont2{
+        text-align: left;
+        width: 100%;
+        height: 180px;
+    }
+    .okpic img{
+        position: absolute;
+        margin-top: 33px;
+        height: 30px !important;
+        width: 30px !important;
+        margin-right: 45px;
+    }
+    .cont2 img{
+        width: 185px;
+        height: 185px
+    }
+    .cont3{
+        text-align: left;
+        width: 100%;
+        height: 200px;
+    }
+    .cont3 img{
+        width: 185px;
+        height: 185px;
+    }
+
+/* Number page ended */
+
+/************************************************************/
+
+/* Last page started */
+
+    /* Last page started */
+    .last_page{
+        width: 100%;
+        height:790px;
+    }
+    .last_page_upperpart{
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .last_page .middlepart{
+        width: 100%;
+        height: 440px;
+    }
+    .last_page .middlepart .contentholder{
+        width: 100%;
+        height: 440px;
+        display: flex;
+        flex-direction: row;
+    }
+    .last_page .middlepart .contentholder .leftpart{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .last_page .middlepart .contentholder .rightpart{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .accordion{
+        margin-top: 25px;
+    }
+    .card{
+        margin: 30px;
+        width: 85%;
+        border-radius: 40px !important;
+    }
+    svg{
+        fill: white;
+        float: right;
+        border: 2px solid blue;
+        background-color: blue;
+        position: absolute;
+        right: -13px;
+        top: -5px;
+        width: 72px;
+        height: 70px;
+        border-radius: 75px; 
+    }
+    .card .card-header span{
+        font-size: 20px !important;
+    }
+    .last_page .lowerpart{
+        width: 100%;
+        height: 270px;
+        display: flex;
+        flex-direction: row;
+    }
+    .last_page .lowerpart .icons{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding : 0px;
+    }
+    .last_page .lowerpart .icons .image_group{
+        width: fit-content;
+    }
+
+    .last_page .lowerpart .links{
+        padding :0px;
+        height: 100%;
+    }
+    .last_page .lowerpart .links .linksforexternal{
+        padding : 0px;
+        height: 200px;
+    }
+    .lowername{
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .lowerpart .links .linksforexternal {
+        display: flex;
+    }
+    .links .linksforexternal ul{
+        list-style: none;
+    }
+    .last_page .lowerpart .subscribe{
+        height: 100%;   
+    }
+    .last_page .lowerpart .subscribe .lowercontentholder{
+        margin-left: 80px;
+        height: 100%;
+    }
+    .lowercontentholder input{
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+    .lowercontentholder .contact_info{
+        margin-top: 20px;
+        float: right;
+    }
+    .contentholder_mobile{
+        display: none;
+    }
+
+/*Last page ended */
+
+/************************************************************/
+@media(max-width:1048px){
+    /* Bcv page media query start */
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 630px;
+        top: 50px;
+        left: -69px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 230px;
+        left: 160px;
+        bottom: 0;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 193px;
+        left: 37px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder {
+        margin-top: 200px;
+        padding-right: 60px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder .contact_button {
+        margin-top: 5px;
+    }
+    /*Bcv page media query end */
+    /* Chatbot page media query started */
+
+    .chatbot_left_part .single_item span {
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .chatbot_left_part .single_item .develop_content{
+        margin-left: 10px;
+    }
+    .chatbot_div {
+        height: 430px;
+        right: 25px;
+        top: 0px;
+    }
+    .chat_space {
+        height: 220px;
+    }
+    .message-form {
+        height: 235px;
+    }
+    .message-form input{
+        height: 40px;
+    }
+    .message-form textarea {
+        height: 75px;
+    }    
+
+    /* Chatbot page media query ended */
+    /*********************************************/
+    /* course page media query started */
+    .module {
+        max-width: 24%;
+    }
+    /* course page media query ended */
+    /********************************************/
+    /* Number page media query started */
+    .okpic img {
+        margin-right: 0px;
+        right: -10px;
+    }
+    /* Number page media query ended */
+    /***********************************************/
+    /* last page media query strated */
+    .last_page .middlepart {
+        height: 480px;
+    }
+    /* Last page media query ended */
+}
+@media(max-width:768px){
+    /* welcome page media query */
+    .namesearch input {
+        width: 50%;
+    }
+/* welcome page media query end */
+/*********************************/
+/* Bcv page media query start */
+    .bcv_upperpart input {
+        width: 40%;
+    }
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 475px;
+        top: 178px;
+        left: -63px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 175px;
+        left: 100px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 156px;
+        left: 30px;
+    }
+
+    .bcv_downpart .rightpart .rightpart_content_holder {
+        font-size: 18px;
+        padding-right: 60px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder .contact_button{
+        margin-top: 50px;
+    }
+    /*Bcv page media query end */
+    /**********************************************/
+    /* Chatbot page media query started */
+    .chatbot_left_part .single_item {
+        margin-left: 0px;
+    }
+    .chatbot_left_part .single_item img {
+        width: 100px;
+    }
+    .chatbot_left_part .single_item span {
+        padding: 5px;
+        margin-left: 10px;
+    }
+    .chatbot_background {
+        top: -65px;
+        left: -55px;
+    }
+    .chatbot_background img {
+        width: 475px;
+    }
+
+    .chatbot_div {
+        height: 400px;
+        width: 345px;
+        right: 25px;    
+        top: 0px;
+    }
+    .chat_space {
+        height: 192px;
+    }
+    .message_input {
+        width: 295px;
+        left: 20px;
+    }
+    .message-form {
+        height: 210px;
+    }
+    .message-form input{
+        width: 242px;
+    }
+    .message-form textarea {
+        width: 242px;
+    }
+
+/* Chatbot page media query ended */
+/*****************************************************/
+/* course page media query started */
+    .module {
+        max-width: 24%;
+    }
+    .lefpart_cont_holder{
+        width: 100%;
+        height: 100%;
+    }
+    .colgrad {
+        width: 410px;
+        left: -30px;
+    }
+    .pot {
+        width: 140px;
+        left: 98px;
+    }
+
+/* Course page media query ended */
+/**********************************************/
+/* number page media query started */
+    .cont1 img {
+        width: 90px;
+        height: 100px;
+    }
+    .cont2 img {
+        width: 130px;
+        height: 140px;
+    }
+    .cont3 img {
+        width: 130px;
+        height: 140px;
+    }
+/* Number page media query ended */
+/*****************************************************/
+/* Last page media query started */
+    .last_page .middlepart {
+        height: 520px;
+    }
+/* Last page media query ended */ 
+}
+@media(max-width:480px){
+    /* welcome page css started */
+    .namesearch input {
+        width: 75%;
+    }
+    .headerpart > .logoandlogin > .usericon {
+        right: 45px;
+    }
+    .footerpart .lower_buttons button {
+        margin: 9px;
+        width: 100px;
+    }
+  /* welcome page css ended */
+  /**************************************/
+  /* Bcv page media query  strted */
+    .bcv_page {
+        width: 100%;
+        height: 1100px;
+    }
+    .bcv_upperpart input {
+        width: 65%;
+    }
+    .bcv_downpart .leftpart {
+        height: 475px;
+    }
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 475px;
+        top: 50px;
+        left: -35px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 169px;
+        left: 135px;
+        bottom: 6px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 140px;
+        left: 40px;
+        bottom: 10px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder {
+        font-size: 16px;
+        padding-right: 10px;
+        margin-top: 0px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder .contact_button {
+        display: flex;
+        justify-content: space-evenly;    
+    }
+  /* Bcv page media query ended */
+  /*************************************************/
+  /* Chatbot page media query started */
+    .chatbot_page {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .chatbot_left_part {
+        height: 400px;
+    }
+    .chatbot_right_part {
+        margin-top: 50px;
+        height: 400px;
+    }
+    .chatbot_background {
+        top: -70px;
+        left: -80px;
+    }
+    .chatbot_background img {
+        width: 550px;
+    }
+    .container {
+        padding: 5px;
+    }
+
+  /* Chatbot page media query ended */
+    /*****************************************************/
+  /* Cources page media query started */
+    .cources_page {
+        height: 1200px;
+    }
+    /* Cources  page media query ended */
+    /****************************************************/
+    /* Number page media query started */
+    .number_page {
+        height: 1000px;
+    }
+    .dnpart {
+        flex-direction: column;
+        height: 900px;
+    }
+    .lefpart {
+        width: 100%;
+        height: 780px;
+    }
+    .colgrad {
+        width: 400px;
+        left: 0px;
+        top: 0px;
+    }
+    .pot {
+        width: 125px;
+        left: 125px;
+    }
+    .rigpart {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .line1{
+        width: 300px;
+    }
+    .img1{
+        width: 95px;
+    }
+    .line2{
+        width: 250px;
+    }
+    .img2{
+        width: 130px;
+    }
+    .cont3 {
+        height: 170px;
+    }
+    .line3{
+        width: 200px;
+    }
+    .img3{
+        width: 130px;
+    }
+    
+    /* Number page media query ended */
+    /************************************************/
+    /* Last page media query started */
+    .last_page{
+        height: 1600px;
+    }
+    .last_page .middlepart {
+        height: 870px;
+    }
+    .last_page .middlepart .contentholder {
+        display: none;
+    }
+    .contentholder_mobile{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .last_page .lowerpart{
+        height: 600px;
+        flex-direction: column-reverse;
+    }
+    .last_page .lowerpart .icons {
+        height: 100px;
+    }
+    .last_page .lowerpart .links {
+        height: 450px;
+        margin-top: 30px;
+    }
+    .last_page .lowerpart .subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 375px;
+    }
+    .last_page .lowerpart .subscribe .lowercontentholder {
+        margin-left: 0px;
+    }
+    /* Last page media query ended */
+
+}
+
+@media (max-width: 450px) {
+
+    .cources_page .up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 240px;
+        width: 100%;
+        font-size: 28px;
+    }
+    .main_course_module {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+    }
+    .cources_page .contpart  {
+        height: 900px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cources_page .contpart .course_container {
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .schl, .med, .art, .engg, .cod, .sing, .dan, .fin, .self, .tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+
+@media(max-width:380px){
+    /* welcome page media query started */
+    .welcome_page {
+        height: 850px;
+    }
+    .headerpart > .logoandlogin > .usericon {
+        right: 30px;
+    }
+    .upper_part > p {
+        font-size: 20px;
+    }
+    .footerpart .lower_buttons button {
+        margin: 10px;
+        width: 200px;
+    }
+    .footerpart .lower_buttons{
+        display: contents;
+    }
+    /* welcome page media query ended */
+    /**************************************/
+    /* Bcv page media query ended */
+    .bcv_page {
+        height: 1160px;
+    }
+    .bcv_downpart .leftpart {
+        height: 400px;
+    }
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 400px;
+        top: 50px;
+        left: -35px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 142px;
+        left: 112px;
+        bottom: 4px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 121px;
+        left: 40px;
+        bottom: 10px;
+    }
+    
+    /* Bcv page media query ended */
+    /*********************************************/
+    /* chatboat page media query started */
+    .chatbot_page {
+        height: 1500px;
+    }
+    .chatbot_left_part {
+        height: auto;
+    }
+    .chatbot_left_part .single_item {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .chatbot_left_part .single_item img {
+        width: 200px;
+    }
+    .chatbot_left_part .single_item span {
+        text-align: center;
+    }
+    .chatbot_left_part .single_item .develop_content {
+        margin-left: 0px;
+    }
+    .chatbot_background {
+        left: -65px;
+    }
+    .chatbot_background img {
+        width: 475px;
+    }
+    .chatbot_div {
+        right: 14px;
+    }
+    .chat_space {
+        height: 170px;
+    }
+    /* chatbot page media query ended */
+    /****************************************************/
+    /* Cources page media query started */
+    .cources_page {
+        height: 1200px;
+    }
+    /* Cources page media query ended */
+    /******************************************************************/
+    /* Number page media query started */
+    .rigpart {
+        padding-right: 0px;
+    }
+    .line1{
+        width: 260px;
+    }
+    .img1{
+        width: 100px;
+    }
+    .line2{
+        width: 220px;
+    }
+    .img2{
+        width: 140px;
+    }
+    .line3{
+        width: 160px;
+    }
+    .img3{
+        width: 200px;
+    }
+    /* Number page media query ended */
+    /*********************************************/
+    /* Last page media query started */
+    .last_page .middlepart {
+        height: 980px;
+    }
+    
+    .contentholder_mobile {
+        height: 980px;
+    }
+    /* Last page media query ended */
+}
+
+@media(max-width:340px){
+
+    /* Bcv page media query started */
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        left: -55px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        left: 80px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        left: 18px;
+    }
+    /* Bcv page media query ended */
+    /***********************************************/
+    /* chatbot page media query started */
+    .chatbot_background {
+        left: -52px;
+    }
+    .chatbot_background img {
+        width: 400px;
+    }
+    .chatbot_div {
+        height: 380px;
+        width: 290px;
+    }
+    .message_input {
+        width: 250px;
+    }
+    .message-form {
+        height: 190px;
+    }
+    .message-form input {
+        height: 35px;
+        width: 188px;
+    }
+    .message-form textarea {
+        width: 188px;
+    }
+    .message-form textarea {
+        height: 65px;
+    }
+        
+    /* chatbot media query ended */
+    /********************************************/
+    /* Number page media query started */
+    .colgrad {
+        width: 340px;
+        left: -10px;
+    }
+    .pot {
+        width: 100px;
+        left: 100px;
+        height: 375px;
+    }
+    .line1{
+        width: 200px;
+    }
+    .img1{
+        width: 105px;
+    }
+    .line2{
+        width: 160px;
+    }
+    .img2{
+        width: 145px;
+    }
+    .line3{
+        width: 100px;
+    }
+    .img3{
+        width: 205px;
+    }
+    /* Number page media query ended */
+    /**********************************************/
+    /* Last page media query started */
+    .last_page .middlepart {
+        height: 1070px;
+    }
+    .contentholder_mobile {
+        height: 1055px;
+    }    
+    /* Last page media query ended */
+}
+
+/* Bcv page css start */
+
+/* .bcv_page{
+    width: 100%;
+    height: ;
+} */
+
+/* .headerpart > .logoandlogin img{
+    justify-content: center;
+}
+.headerpart > .logoandlogin a{
+    justify-content: right;
+} */
+/* .leftheaderPart{
+    width: 100%;
+    justify-content: center;
+} */
+/* .usericon{
+    width: 100%;
+    justify-content: right;
+} */
+
+/* .bcv_page{
     width: 100%;
     height: 800px;
     margin-bottom: 20px;
@@ -47,7 +1400,7 @@ html,body{
     width: 100%;
     height: 800px;
     background-image: url('../careermania/Background/footer.png');
-}
+} */
 
 /****************/
 

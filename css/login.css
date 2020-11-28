@@ -6,104 +6,77 @@ body{
     background-color: blue;
     margin: 0;
     width: 100% !important;
+    display: flex;
+    justify-content: center;
 }
-.register{
-    height: 90%;
-/*
-    margin-top: 3%; 
-    padding: 3%; 
-    margin: 0;
-*/
+.container{
+    display: flex;
+    justify-content: center;
 }
-.register-left{
-    text-align: center;
-    color: #fff;
-    margin-top: 4%;
-}
-.register-left input{
-    border: none;
-    border-radius: 1.5rem;
-    padding: 2%;
-    width: 60%;
-    background: #f8f9fa;
-    font-weight: bold;
-    color: #383d41;
-    margin-top: 30%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
+
 .register-right{
-    margin-top: 6%;
+    margin: 10%;
     background: #f8f9fa;
-    /* border-top-left-radius: 10% 50%; */
-    /* border-bottom-left-radius: 10% 50%; */
-    top:50%;
-    left: 30%;
+    border: 2px solid #f8f9fa;
     border-radius: 15px;
-        
+    height: 600px;
 }
-.register-left img{
-    margin-top: 15%;
-    margin-bottom: 5%;
-    width: 25%;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-.box{
-    min-height: 100%;
-}
+
 .logo{
-    display: inline;
-    left: 70px;
-    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .logo img{
     width: 120px;
     height: 125px;
-    margin-left: 60px;
-}
-.row{
-    margin-right: -6px;
-    margin-left: -6px;
 }
 .cword{
-    margin-left: -170px;
+    position: absolute;
+    top: 100px;
     color: orange;
-    text-align: center;
-    margin-top: -20px;
     font-size: 20px;
 }
 
+#myTabContent{
+    margin-top: 20px;
+}
+
+.footer-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .btnSignup{
-    float: left;
     border: none;
-    border-radius: 1.5rem;
     padding: 2%;
+    border-radius: 1.5rem;
     background: green;
     color: #fff;
     font-weight: 600;
-    width: 50%;
     cursor: pointer;
 }
 .btnLogin{
-    float: right;
+    position: absolute;
+    right: 20px;
+    padding: 2%;
     border: none;
     border-radius: 1.5rem;
-    padding: 2%;
     background: #0062cc;
     color: #fff;
     font-weight: 600;
-    width: 50%;
     cursor: pointer;
 }
-.footer-buttons{
-    padding: 0% 1%;
-}
+
 .footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: -25px;
-    width: 40%;
-    margin-left: 125px;
+    margin-top: 20px;
 }
 .footer_content p{
     margin-bottom: 0px;
@@ -115,21 +88,61 @@ body{
 }
 .signup_hr{
     width: 200px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.4);
 }
 .footer_icons{
-    margin-left: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .footer_icons img{
     width: 33px;
 }
-
-.table{
-    margin-bottom: 0px !important;
-
-/*
-.mword{
-   color: blue;
+ @media screen and (min-width:500px) and (max-width:800px) {
+     .register .register-form {
+    font-size: 14px;
 }
-*/
+  .col-md-5{
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+      .signup_hr {
+    width: 140px;
+}
+}
+@media(max-width:480px){
+    .footer_content {
+    font-size: 14px;
+}
+    .signup_hr {
+    width: 140px;
+}
+}
+@media (max-width: 380px){
+    .register-right{
+        margin-left: 10%;
+    }
+    .signup_hr {
+    width: 130px;
+}
+    .footer_icons img {
+    width: 30px;
+}
+}
+@media (max-width: 325px){
+.footer_content {
+    font-size: 12px;
+}
+    .register .register-form {
+    font-size: 12px;
+}
+    .signup_hr {
+    width: 110px;
+}
+    .footer_icons img {
+    width: 28px;
+}
+}
