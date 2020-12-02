@@ -958,17 +958,17 @@ html,body{
         height: 475px;
     }
     .bcv_downpart .leftpart .content_holder .background_shape {
-        width: 475px;
+        width: 112%;
         top: 50px;
         left: -35px;
     }
     .bcv_downpart .leftpart .content_holder .man_reading {
-        width: 169px;
+        width: 39%;;
         left: 135px;
         bottom: 6px;
     }
     .bcv_downpart .leftpart .content_holder .lamp {
-        width: 140px;
+        width: 33%;
         left: 40px;
         bottom: 10px;
     }
@@ -1001,7 +1001,7 @@ html,body{
         left: -80px;
     }
     .chatbot_background img {
-        width: 550px;
+        width: 108%;
     }
     .container {
         padding: 5px;
@@ -1028,38 +1028,38 @@ html,body{
         height: 780px;
     }
     .colgrad {
-        width: 400px;
+        width: 100%;
         left: 0px;
         top: 0px;
     }
     .pot {
-        width: 125px;
-        left: 125px;
+        width: 30%;
+        left: 30%;
     }
     .rigpart {
         padding-top: 20px;
         width: 100%;
     }
     .line1{
-        width: 300px;
+        width: 70%;
     }
     .img1{
-        width: 95px;
+        width: 30%;
     }
     .line2{
-        width: 250px;
+        width: 60%;
     }
     .img2{
-        width: 130px;
+        width: 40%;
     }
     .cont3 {
         height: 170px;
     }
     .line3{
-        width: 200px;
+        width: 48%;
     }
     .img3{
-        width: 130px;
+        width: 52%;
     }
     
     /* Number page media query ended */
@@ -1215,11 +1215,12 @@ html,body{
     .chatbot_background {
         left: -65px;
     }
-    .chatbot_background img {
+    /* .chatbot_background img {
         width: 475px;
-    }
+    } */
     .chatbot_div {
-        right: 14px;
+        /* right: 14px; */
+        right: 1%;
     }
     .chat_space {
         height: 170px;
@@ -1236,7 +1237,7 @@ html,body{
     .rigpart {
         padding-right: 0px;
     }
-    .line1{
+    /* .line1{
         width: 260px;
     }
     .img1{
@@ -1253,7 +1254,7 @@ html,body{
     }
     .img3{
         width: 200px;
-    }
+    } */
     /* Number page media query ended */
     /*********************************************/
     /* Last page media query started */
@@ -1285,9 +1286,9 @@ html,body{
     .chatbot_background {
         left: -52px;
     }
-    .chatbot_background img {
+    /* .chatbot_background img {
         width: 400px;
-    }
+    } */
     .chatbot_div {
         height: 380px;
         width: 290px;
@@ -1313,15 +1314,14 @@ html,body{
     /********************************************/
     /* Number page media query started */
     .colgrad {
-        width: 340px;
-        left: -10px;
+        width: 104%;
+        left: -2%;
     }
     .pot {
-        width: 100px;
-        left: 100px;
-        height: 375px;
+        left: 32%;
+        height: 91%;
     }
-    .line1{
+    /* .line1{
         width: 200px;
     }
     .img1{
@@ -1338,7 +1338,7 @@ html,body{
     }
     .img3{
         width: 205px;
-    }
+    } */
     /* Number page media query ended */
     /**********************************************/
     /* Last page media query started */
