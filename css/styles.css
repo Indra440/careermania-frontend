@@ -66,6 +66,11 @@ html,body{
     width: 70px;
     height: 100px;
 }
+
+.headerpart > .logoandlogin > .logo img{
+    width: 70px;
+    height: 100px;
+}
 .headerpart > .logoandlogin > .usericon{
     background-color: white;
     border: 12px solid white;
@@ -832,8 +837,8 @@ html,body{
     /*Welcome page media query started*/
     
     .headerpart > .logoandlogin > .logo img {
-    width: 65px;
-    height: 95px;
+    width: 75px;
+    height: 120px;
     }
     /*Welcome page media query ended*/
     /**********************************************************************/
