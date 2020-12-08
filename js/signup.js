@@ -1,5 +1,16 @@
 $(document).ready(function(){
     $(".dropdown").select2();
+    
+    var url = window.location.href;
+    let value = url.split("value=")[1]
+    if(value == "class"){
+        $("#class_btn").trigger();
+    }else if(value == "college"){
+        $("#college_btn").trigger();
+    }else if(value == "job") {
+        $("#job_btn").trigger();
+    }
+
     $("#college_btn").click(function(){
         // console.log("Its clicking here");
         // console.log($(this).val());

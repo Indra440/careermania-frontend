@@ -15,23 +15,52 @@ $(document).ready(function(){
 
     var count = 1;
     window.setInterval(function(){
-        buttonChange();
+        bcvTextChange();
     },3000);
 
-    // $("#first_page").load("./html/background.html");
+    var scrollLink = $('.scroll');
+    // Smooth scrolling
+    scrollLink.click(function(e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $(this.hash).offset().top
+      }, 1000 );
+    });
 
-    function buttonChange(){
-        let cur_index = 0;
-        $("#button_group").find(".showhidebutton").each(function(index){
-                $(this).fadeOut();
-                $(this).addClass("hide");
-            if(index == count){
-                cur_index = index+1;
-                $(this).removeClass("hide");
-                $(this).fadeIn();
-            }
-            (index == 2)?((count >= 2)?(count=0):(count= cur_index)):"";
-        })
+    $("#ClassesButton").click(function(){
+        var origin = window.location.origin;
+        window.location.href = origin+'/html/signup.html?value=class';
+    })
+    $("#CollegesButton").click(function(){
+        var origin = window.location.origin;
+        window.location.href = origin+'/html/signup.html?value=college';
+    })
+    $("#JobsButton").click(function(){
+        var origin= window.location.origin;
+        window.location.href = origin+'/html/signup.html?value=job';
+    })
+
+    // $("#background_image").load("./html/background.html");
+
+    // function buttonChange(){
+    //     let cur_index = 0;
+    //     $("#button_group").find(".showhidebutton").each(function(index){
+    //             $(this).fadeOut();
+    //             $(this).addClass("hide");
+    //         if(index == count){
+    //             cur_index = index+1;
+    //             $(this).removeClass("hide");
+    //             $(this).fadeIn();
+    //         }
+    //         (index == 2)?((count >= 2)?(count=0):(count= cur_index)):"";
+    //     })
+    // }
+
+    let index = 0;
+    function bcvTextChange(){
+        let buttonTextArray = ["Buisness","Career","Value"];
+        $("#showhideTextportion").find(".showhidebutton").html(buttonTextArray[index]);
+        index == 2 ? index = 0 : index ++;
     }
 
     $(".chatbutton").click(function(){

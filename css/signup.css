@@ -3,7 +3,6 @@ html,body{
     height: 100% !important;
 }
 body{
-    /* background-color:blue; */
     margin: 0;
     width: 100% !important;
     overflow-y: overlay;
@@ -14,6 +13,16 @@ body{
 }
 #signup_page{
     z-index: 1;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.forht{
+    height:15%;
+}
+.forbtn{
+    height: 7%;
 }
 .register{
     z-index: 1;
@@ -67,27 +76,35 @@ body{
     cursor: pointer;
 }
 .register-right{
+    background: #f8f9fa;
     margin-top: 6%;
-    background: white;
     width: 80%;
-    /* border-top-left-radius: 10% 50%; */
-    /* border-bottom-left-radius: 10% 50%; */
-    /* top:50%; */
-    left: 13%;
-    height: fit-content;
+    height: 800px;
     border-radius: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+}
+.header_content{
+    margin: 10px;
 }
 .header_content .logo_img{
-    width:75px;
+    width:70px;
+    height: 100px;
     margin-top: 12px;
 }
 .header_content .logo_text{
     float: right;
+    font-size: 24px;
     margin-top: 40px;
-    width: 130px;
+}
+ .btn{
+    border-radius: 100px;
+}
+.btn-group button:hover{
+    color: #fff;
+    background-color: black!important;
+    border-color: black;
 }
 .register-left img{
     margin-top: 15%;
@@ -123,10 +140,11 @@ body{
 }
 .btnSignup{
     float: left;
-    border: none;
+    border: 2px solid;
+    border-color: black;
     border-radius: 1.5rem;
-    padding: 2%;
-    background: green;
+    padding: 1%;
+    background: #da0b4e;
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -134,10 +152,11 @@ body{
 }
 .btnLogin{
     float: right;
-    border: none;
+    border: 2px solid;
+    border-color: #da0b4e;
     border-radius: 1.5rem;
-    padding: 2%;
-    background: #0062cc;
+    padding: 1%;
+    background:  black;
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -149,7 +168,7 @@ body{
 .register .nav-tabs{
     margin-top: 3%;
     border: none;
-    background: #0062cc;
+    background:  #da0b4e;
     border-radius: 1.5rem;
     width: 28%;
     float: right;
@@ -170,8 +189,8 @@ body{
 }
 .register .nav-tabs .nav-link.active{
     width: 100px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
+    color: #da0b4e;
+    border: 2px solid #da0b4e;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
@@ -185,16 +204,35 @@ body{
     min-height: 94%;
 }
 .btn-group{
-    left: 20%;
+    left: 22%;
 }
 button.btn.btn-primary {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
     background: transparent;
-    border: none;
-    color: blue;
+    border: 2px solid;
     margin-right: 33%;
+    color: #fff;
+    background-color: black;
+    border-color: #da0b4e;
+}
+.btn-primary:not(:disabled):not(.disabled).active{
+    color: #fff;
+    background-color: #da0b4e !important;
+    border-color: black;
+}
+ .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.btn-group>.btn:not(:first-child) {
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
 }
 .form-group {
     margin-bottom: 0 !important;
@@ -234,15 +272,23 @@ input{
 .signup_hr{
     width: 200px;
     margin-top: 0px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .footer_icons{
+    margin-bottom: 15px;
     margin-left: 385px;
 }
 .footer_icons img{
     width: 33px;
 }
-@media(max-width:1024px) {
+/*************************** Media Query Started **************************/
+@media(max-width: 1025px){
+    .btn-group {
+    left: 16%;
+}
+    .head_name_input {
+    width: 72%;
+}
     .footer_icons {
     margin-left: 325px;
 }
@@ -250,10 +296,20 @@ input{
     width: 40%;
     margin-left: 220px;
      }
+    .header_content .logo_img {
+    width: 65px;
+    height: 95px;
 }
-
+}
  @media screen and (min-width:500px) and (max-width:770px) {
-    .footer_icons {
+    .header_content .logo_img {
+    width: 60px;
+    height: 90px;
+     }
+     .header_content .logo_text {
+    font-size: 22px;
+     }
+     .footer_icons {
     margin-left: 230px;
      } 
      .footer_content {
@@ -267,21 +323,45 @@ input{
     font-size: 14px;
 }
      .btn-group {
-    left: 10%;
+    left: 8%;
 }
+    .btn-group-lg>.btn, .btn-lg {
+    padding: 5px 5px;
+        font-size: 18px;
+     }
+     .head_name_input {
+    width: 60%;
+    }
 }
 @media(max-width:480px){
+    .forht {
+        height: 11%;
+    }
+    .forbtn {
+    height: 5%;
+
+    }
+    .register-right{
+    height: 1150px;
+    }
+    .header_content .logo_img {
+    width: 55px;
+    height: 85px;
+     }
+    .header_content .logo_text {
+    font-size: 20px;
+     }
+      .btn-group {
+    left: -2%;
+}
     .head_name_input {
     display: inline;
         width: 73%;
     }
     .register-right {
         width: 90% !important;
-        left: 5%;
+        left: 0%;
     }
-    .btn-group {
-    left: 20px;
-}
     button.btn.btn-primary {
     font-size: 14px;
 }
