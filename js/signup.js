@@ -6,10 +6,13 @@ $(document).ready(function(){
     let value = url.split("value=")[1]
     console.log("value ",value);
     if(value == "class"){
+        console.log("1");
         $("#class_btn").trigger();
     }else if(value == "college"){
+        console.log("2");
         $("#college_btn").trigger();
     }else if(value == "job") {
+        console.log("3");
         $("#job_btn").trigger();
     }
 
