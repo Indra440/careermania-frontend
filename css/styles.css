@@ -1,16 +1,8 @@
-/* @import "welcome.css";
-@import "bcv.css";
-@import "chatbot.css";
-@import "cources.css";
-@import "number.css";
-@import "lastpage.css";   */
 
-/* Main css of this page */
+/************************************************************** Main css of this page *****************************************************************/
 html,body{
     width: 100%;
     height: 100%;
-    background-color: #f1f1f1;
-    /* overflow-y: scroll; */
 }
 
 .hide{
@@ -22,35 +14,57 @@ html,body{
     top: 0;
     width: 100%;
 }
+/************************************************************* welcome page css start *****************************************************************/
 
-/**************************************************************/
-/*welcome page css start */
 .welcome_page{
+    background-color: #1100000f;
     width: 100%;
     height: 800px;
+    overflow: hidden;
+}
+#background_image .header{
+    position: absolute;
+}
+#background_image .header img{
+    width: 100%;
+    height: 425px;
 }
 
 .headerpart{
-    height: 330px;
-/*    background-color: green;*/
+    height: 422px;
+    background-image: url(../asset/header.png);
+    background-position:  left top;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .footerpart{
+    background-image: url(../Background/lower_left.png),url(../Background/lower_right.png),url(../asset/behind_girl4.png);
+    background-position: left bottom, right bottom,right bottom;
+    background-repeat: no-repeat, no-repeat,no-repeat;
+    background-size: 30%,30%,30%;
     height: fit-content;
-/*    background-color: blue;*/
 }
-/* .headercontent{
-    display: flex;
-} */
 .headerpart > .logoandlogin{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.headerpart > .logoandlogin > .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.headerpart > .logoandlogin > .logo p{
+    font-size: 24px;
+}
+
 .headerpart > .logoandlogin > .logo img{
-    width: 130px;
-    height: 130px;
+    width: 70px;
+    height: 100px;
 }
 
 
@@ -65,31 +79,17 @@ html,body{
     width: 20px;
     height: 22px;
 }
-
-.headerpart .namesearch{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
-.namesearch > p {
-    font-size: 24px;
-}
-
-.namesearch input{
-    width: 32%;
-    border-radius: 20px;
-}
-
 .footerpart{
-    padding-top: 100px;
+    padding-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 380px;
 }
 
 .footerpart .upper_part{
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,39 +97,62 @@ html,body{
     margin-top: -30px;
 }
 .upper_part > h1{
-    color: skyblue;
+    color: #da0b4e;
 }
 .upper_part > p{
     font-size: 24px;
     margin-bottom: 1rem;
 }
 .footerpart .lower_buttons{
+    z-index: 2;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 .footerpart .lower_buttons button{
     margin: 10px;
     border-radius: 20px;
     padding: 8px;
     width: 120px;
-/*    width: 30%;*/
 }
-.footerpart img{
-    width: 25px;
-    height: 35px;
-    margin-top: 60px;
-    margin-bottom: 30px;
- 
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border: 2px solid;
+    border-color: #da0b4e;
+}
+.footerpart .behind_girl img{
+    z-index: -2;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 35%;
+    right: -6%; 
+}
+.footerpart .cross_behind_girl{
+    z-index: 0;
+    position: absolute;
+    width: 25%;
+    right: 0%;
+    top: 56%;
+}
+.footerpart .cute_girl{
+    z-index: 1;
+    position: absolute;
+    width: 50%;
+    bottom: -25%;
+    right: 0%;
 }
 /* welcome page css end */
-/**********************************************************/
-/* bcv page css start */
+/**************************************************************** bcv page css start ******************************************************************/
+
 .bcv_page{
+    background-color: #1100000f;
     width: 100%;
-    height: 850px;
+    height: 900px;
 }
 /* Navbar stared */
 .bcv_page #navbar{
-    background-color: orange; 
+    background-color: #da0b4e; 
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -148,8 +171,9 @@ html,body{
 }
 
 .bcv_page #navbar .logo img{
-    width: 110px;
-    height: 95px;
+    margin-left: 10%;
+    width: 50px;
+    height: 75px;
 }
 
 .bcv_page #navbar .top_rig{
@@ -166,7 +190,7 @@ html,body{
     border-radius: 150px;
 }
 #hamburgerMenu{
-    background-color: orange;
+    background-color: #da0b4e;
     display: none;
 }
 #hamburgerMenu a:hover {
@@ -190,6 +214,9 @@ html,body{
     width: 500px;
     display: flex;
     justify-content: space-evenly;
+}
+#menu_content span a{
+    color: white;
 }
 
 /* Navbar ended */
@@ -223,8 +250,7 @@ html,body{
 .bcv_downpart .leftpart .content_holder .background_shape{
     width: 740px;
     position: absolute;
-    /* z-index: -1; */
-    top: -65px;
+    top: -55px;
     left: -45px;
 }
 .bcv_downpart .leftpart .content_holder .man_reading {
@@ -254,20 +280,39 @@ html,body{
     font-size: 30px;
     padding-right: 90px;
 }
-.showhidebutton{
+#showhideTextportion{
+    display: flex;
+    justify-content: flex-end;
+}
+.showhideTextBox{
     width: 200px;
+    background-color: #da0b4e;
+    border: 2px solid;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+.showhideTextBox .showhidebutton{
+    color: white;
 }
 .bcv_downpart .rightpart .rightpart_content_holder .contact_button{
     margin-top: 85px;
+    
 }
-
+.contact_button button{
+    margin: 10px;
+    border-radius: 20px;
+    padding: 8px;
+    width: 120px;
+}
 /*bcv page css end */
-/*************************************************************/
-/* chatbot page strted */
+/**************************************************************** chatbot page strted *****************************************************************/
+
     .chatbot_page{
+        background-color: #1100000f;
         width: 100%;
-        height: 650px;
-        margin-top: 100px;
+        height: 600px;
         display: inline-flex;
     }
 
@@ -290,6 +335,10 @@ html,body{
         margin-left: 50px;
         height: fit-content;
     }
+    .texto{
+    font-size: 24px; 
+    color: #da0b4e;
+    }
     .chatbot_right_part{
         display: flex;
         justify-content: center;
@@ -299,7 +348,7 @@ html,body{
     .chatbot_background{
         position: absolute;
         z-index: -1;
-        top: -90px;
+        top: -80px;
     }
     .chatbot_background img{
         width: 670px;
@@ -313,7 +362,14 @@ html,body{
         opacity: 0.9;
         border: 2px solid #0000ff42;
         padding: 5px;
-        right: 150px;
+        right: 100px;
+        top: 40px;
+    }
+    .btn-primary:not(:disabled):not(.disabled).active{
+    color: #fff;
+    border: 2px solid;
+    background-color: #da0b4e;
+    border-color: black;
     }
     .chatbot_heading{
         text-align: center;
@@ -434,12 +490,12 @@ html,body{
     }
 
 /* Chatbot page ended */
-/****************************************************/
+/*************************************************************** Cources page started *****************************************************************/
 
-/* Cources page started */
     .cources_page{
+        background-color: #1100000f;
         width: 100%;
-        height: 600px;
+        height: 700px;
     }
     .cources_page .up{
         display: flex;
@@ -448,16 +504,16 @@ html,body{
         align-items: center;
         height: 40%;
         width: 100%;
-        font-size: 32px;
+        font-size: 36px;
     }
     .cources_page .up p{
         text-align: center;
     }
     .cources_page .up .cword{
-        color: orange;
+        color:  #da0b4e;
     }
     .cources_page .up .mword{
-       color: blue;
+       color: black;
     }
     .cources_page .contpart{
         height : 350px;
@@ -469,7 +525,6 @@ html,body{
     .cources_page .contpart .course_container{
         display: flex;
         flex-direction: row;
-        /* background-color: #dcdcdc; */
         height : 350px;
         width : 700px;
         margin-bottom: 0px;
@@ -479,7 +534,7 @@ html,body{
     }
 
     .module{
-        color: blueviolet;
+        color:  #da0b4e;
         display: flex;
         flex-direction:column;
     }
@@ -502,10 +557,11 @@ html,body{
 
 /*Cources page ended */
 
-/*********************************************************/
+/************************************************************** Number page started *******************************************************************/
 
-/* Number page started */
+
     .number_page {
+        background-color: #1100000f;
         width: 100%;
         height:670px;
     }
@@ -515,13 +571,16 @@ html,body{
         height: 120px;
     }
     .line{
-        color: darkseagreen;
+        color: black;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
         font-size: 36px;
         margin-left: 00px;
+    }
+ .number_page .line .word{
+        color:  #da0b4e;
     }
     .uprpart p{
         text-align: center;
@@ -580,7 +639,7 @@ html,body{
     }
     .line1, .line2, .line3{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
     .img1, .img2, .img3 {
@@ -603,7 +662,7 @@ html,body{
         margin-top: 33px;
         height: 30px !important;
         width: 30px !important;
-        margin-right: 45px;
+        margin-left: 240px;
     }
     .cont2 img{
         width: 185px;
@@ -621,30 +680,29 @@ html,body{
 
 /* Number page ended */
 
-/************************************************************/
+/*******************************************************************Last page started******************************************************************/
 
-/* Last page started */
-
-    /* Last page started */
     .last_page{
+        background-color: #424242;
         width: 100%;
-        height:790px;
+        height:820px;
     }
     .last_page_upperpart{
         width: 100%;
-        height: 100px;
-        margin-top: 100px;
+        height: 130px;
+/*        margin-top: 50px;*/
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     .last_page .middlepart{
         width: 100%;
-        height: 440px;
+        height: 420px;
     }
     .last_page .middlepart .contentholder{
         width: 100%;
-        height: 440px;
+        height: 420px;
         display: flex;
         flex-direction: row;
     }
@@ -667,31 +725,52 @@ html,body{
     }
     .card{
         margin: 30px;
-        width: 85%;
+        width: 100%;
         border-radius: 40px !important;
     }
+    .one{
+    background-color:  #da0b4e;
+    
+    }
+    .two{
+    background-color: gainsboro;
+    
+    }
+    .three{
+    background-color: grey;
+    }
     svg{
-        fill: white;
         float: right;
-        border: 2px solid blue;
-        background-color: blue;
+        border: 2px solid white;
+        background-color:white; 
         position: absolute;
-        right: -13px;
-        top: -5px;
-        width: 72px;
-        height: 70px;
+        right: 0px;
+        top: -10px;
+        width: 65px;
+        height: 65px;
         border-radius: 75px; 
     }
+    .card-body{
+    color: white;
+    }
     .card .card-header span{
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
     .last_page .lowerpart{
+        background-color: #696969;
+        background-image: url(../Background/lower_left.png),url(../Background/lower_right.png);
+        background-position: left bottom, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 30%,30%;
+        margin-top: 20px;
         width: 100%;
-        height: 270px;
+        height: 280px;
         display: flex;
         flex-direction: row;
+        
     }
     .last_page .lowerpart .icons{
+        padding: 10px;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -699,18 +778,20 @@ html,body{
     }
     .last_page .lowerpart .icons .image_group{
         width: fit-content;
+        padding: 10px;
     }
 
     .last_page .lowerpart .links{
-        padding :0px;
+        padding :10px;
         height: 100%;
     }
     .last_page .lowerpart .links .linksforexternal{
         padding : 0px;
         height: 200px;
+        color: white;
     }
     .lowername{
-        height: 70px;
+        height: 50px;
         display: flex;
         justify-content: center;
     }
@@ -719,13 +800,14 @@ html,body{
     }
     .links .linksforexternal ul{
         list-style: none;
+        padding: 15px;
     }
     .last_page .lowerpart .subscribe{
         height: 100%;   
     }
     .last_page .lowerpart .subscribe .lowercontentholder{
-        margin-left: 80px;
-        height: 100%;
+        margin-left: 75px;
+        height: 90%;
     }
     .lowercontentholder input{
         margin-top: 20px;
@@ -734,15 +816,25 @@ html,body{
     .lowercontentholder .contact_info{
         margin-top: 20px;
         float: right;
+        color: white;
     }
     .contentholder_mobile{
         display: none;
     }
 
-/*Last page ended */
-
-/************************************************************/
-@media(max-width:1048px){
+    /*Last page ended */
+/************************************************************ Main CSS ended **************************************************************************/
+/********************************************************** media query started ***********************************************************************/
+/***************************************************** Laptop M 1024px media query stared *************************************************************/
+@media(max-width:1025px){
+    /*Welcome page media query started*/
+    
+    .headerpart > .logoandlogin > .logo img {
+    width: 75px;
+    height: 120px;
+    }
+    /*Welcome page media query ended*/
+    /**********************************************************************/
     /* Bcv page media query start */
     .bcv_downpart .leftpart .content_holder .background_shape {
         width: 630px;
@@ -766,6 +858,7 @@ html,body{
         margin-top: 5px;
     }
     /*Bcv page media query end */
+    /*************************************************************************/
     /* Chatbot page media query started */
 
     .chatbot_left_part .single_item span {
@@ -779,6 +872,9 @@ html,body{
         height: 430px;
         right: 25px;
         top: 0px;
+    }
+    .chatbot_background img {
+    width: 600px;
     }
     .chat_space {
         height: 220px;
@@ -794,34 +890,42 @@ html,body{
     }    
 
     /* Chatbot page media query ended */
-    /*********************************************/
+    /*************************************************************************************/
     /* course page media query started */
     .module {
         max-width: 24%;
     }
     /* course page media query ended */
-    /********************************************/
+    /**********************************************************************************/
     /* Number page media query started */
     .okpic img {
         margin-right: 0px;
         right: -10px;
     }
     /* Number page media query ended */
-    /***********************************************/
+    /*************************************************************************************/
     /* last page media query strated */
     .last_page .middlepart {
         height: 480px;
     }
+    .card {
+        width: 90%;
+    }
     /* Last page media query ended */
 }
-@media(max-width:768px){
+/******************************************************** Tablet 768px media query stared ************************************************************/
+@media(max-width:770px){
     /* welcome page media query */
+    .headerpart > .logoandlogin > .logo img {
+    width: 70px;
+    height: 115px;
+    }
     .namesearch input {
         width: 50%;
     }
-/* welcome page media query end */
-/*********************************/
-/* Bcv page media query start */
+    /* welcome page media query end */
+    /********************************************************************/
+    /* Bcv page media query start */
     .bcv_upperpart input {
         width: 40%;
     }
@@ -847,7 +951,7 @@ html,body{
         margin-top: 50px;
     }
     /*Bcv page media query end */
-    /**********************************************/
+    /*************************************************************************************/
     /* Chatbot page media query started */
     .chatbot_left_part .single_item {
         margin-left: 0px;
@@ -870,7 +974,7 @@ html,body{
     .chatbot_div {
         height: 400px;
         width: 345px;
-        right: 25px;    
+        right: 20px;    
         top: 0px;
     }
     .chat_space {
@@ -890,9 +994,9 @@ html,body{
         width: 242px;
     }
 
-/* Chatbot page media query ended */
-/*****************************************************/
-/* course page media query started */
+    /* Chatbot page media query ended */
+    /*************************************************************************************/
+    /* course page media query started */
     .module {
         max-width: 24%;
     }
@@ -909,9 +1013,9 @@ html,body{
         left: 98px;
     }
 
-/* Course page media query ended */
-/**********************************************/
-/* number page media query started */
+    /* Course page media query ended */
+    /***************************************************************************************/
+    /* number page media query started */
     .cont1 img {
         width: 90px;
         height: 100px;
@@ -924,32 +1028,52 @@ html,body{
         width: 130px;
         height: 140px;
     }
-/* Number page media query ended */
-/*****************************************************/
-/* Last page media query started */
+    /* Number page media query ended */
+    /*****************************************************************************************/
+    /* Last page media query started */
     .last_page .middlepart {
         height: 520px;
     }
-/* Last page media query ended */ 
+    .card {
+        width: 90%;
+    }
+    /* Last page media query ended */ 
 }
-@media(max-width:480px){
+/****************************************************** Mobile L 425px media query stared *************************************************************/
+@media(max-width:450px){
     /* welcome page css started */
-    .namesearch input {
-        width: 75%;
+    .welcome_page{
+        height: 700px;
+    }
+    .headerpart {
+    height: 325px;
+    }
+    .headerpart > .logoandlogin > .logo img {
+    width: 65px;
+    height: 110px;
     }
     .headerpart > .logoandlogin > .usericon {
         right: 45px;
+    }
+    .upper_part > p{
+        font-size: 20px;
     }
     .footerpart .lower_buttons button {
         margin: 9px;
         width: 100px;
     }
+    .footerpart .lower_buttons {
+        margin-bottom: 30px;
+    }
   /* welcome page css ended */
-  /**************************************/
+  /********************************************************************/
   /* Bcv page media query  strted */
     .bcv_page {
         width: 100%;
         height: 1100px;
+    }
+    .bcv_page #navbar .top_rig{
+        padding-right: 30px;
     }
     .bcv_upperpart input {
         width: 65%;
@@ -982,7 +1106,7 @@ html,body{
         justify-content: space-evenly;    
     }
   /* Bcv page media query ended */
-  /*************************************************/
+  /*************************************************************************************/
   /* Chatbot page media query started */
     .chatbot_page {
         height: 900px;
@@ -1006,18 +1130,60 @@ html,body{
     .container {
         padding: 5px;
     }
-
-  /* Chatbot page media query ended */
-    /*****************************************************/
-  /* Cources page media query started */
+    .chatbot_div{
+        right: 40px;
+    }
+    /* Chatbot page media query ended */
+    /*************************************************************************************/
+    /* Cources page media query started */
     .cources_page {
         height: 1200px;
     }
+    .cources_page .up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 240px;
+        width: 100%;
+        font-size: 28px;
+    }
+    .main_course_module {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+    }
+    .cources_page .contpart  {
+        height: 900px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cources_page .contpart .course_container {
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .schl, .med, .art, .engg, .cod, .sing, .dan, .fin, .self, .tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
     /* Cources  page media query ended */
-    /****************************************************/
+    /******************************************************************************/
     /* Number page media query started */
     .number_page {
-        height: 1000px;
+        height: 1100px;
+    }
+    .uprpart p{
+        font-size: 28px;
     }
     .dnpart {
         flex-direction: column;
@@ -1060,16 +1226,18 @@ html,body{
     }
     .img3{
         width: 52%;
-    }
-    
+    }    
     /* Number page media query ended */
-    /************************************************/
+    /***********************************************************************/
     /* Last page media query started */
     .last_page{
         height: 1600px;
     }
     .last_page .middlepart {
         height: 870px;
+    }
+    .card {
+        width: 80%;
     }
     .last_page .middlepart .contentholder {
         display: none;
@@ -1101,62 +1269,19 @@ html,body{
         margin-left: 0px;
     }
     /* Last page media query ended */
-
 }
-
-@media (max-width: 450px) {
-
-    .cources_page .up{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 240px;
-        width: 100%;
-        font-size: 28px;
-    }
-    .main_course_module {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction:row;
-    }
-    .cources_page .contpart  {
-        height: 900px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .cources_page .contpart .course_container {
-        justify-content: center;
-        align-items: center;
-        height: 900px;
-        width: 100%;
-        flex-direction: column;
-    }
-    .schl, .med, .art, .engg, .cod, .sing, .dan, .fin, .self, .tech {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-}
-
-
-
+/******************************************************** Mobile M 375px media query stared ***********************************************************/
 @media(max-width:380px){
     /* welcome page media query started */
-    .welcome_page {
-        height: 850px;
+    .headerpart > .logoandlogin > .logo img {
+    width: 55px;
+    height: 90px;
     }
     .headerpart > .logoandlogin > .usericon {
         right: 30px;
     }
     .upper_part > p {
-        font-size: 20px;
+        font-size: 18px;
     }
     .footerpart .lower_buttons button {
         margin: 10px;
@@ -1166,7 +1291,7 @@ html,body{
         display: contents;
     }
     /* welcome page media query ended */
-    /**************************************/
+    /******************************************************************************/
     /* Bcv page media query ended */
     .bcv_page {
         height: 1160px;
@@ -1189,9 +1314,8 @@ html,body{
         left: 40px;
         bottom: 10px;
     }
-    
     /* Bcv page media query ended */
-    /*********************************************/
+    /**********************************************************************************/
     /* chatboat page media query started */
     .chatbot_page {
         height: 1500px;
@@ -1215,48 +1339,27 @@ html,body{
     .chatbot_background {
         left: -65px;
     }
-    /* .chatbot_background img {
-        width: 475px;
-    } */
     .chatbot_div {
         /* right: 14px; */
-        right: 1%;
+        right: 4%;
     }
     .chat_space {
         height: 170px;
     }
     /* chatbot page media query ended */
-    /****************************************************/
+    /*********************************************************************************/
     /* Cources page media query started */
     .cources_page {
         height: 1200px;
     }
     /* Cources page media query ended */
-    /******************************************************************/
+    /*********************************************************************************/
     /* Number page media query started */
     .rigpart {
         padding-right: 0px;
     }
-    /* .line1{
-        width: 260px;
-    }
-    .img1{
-        width: 100px;
-    }
-    .line2{
-        width: 220px;
-    }
-    .img2{
-        width: 140px;
-    }
-    .line3{
-        width: 160px;
-    }
-    .img3{
-        width: 200px;
-    } */
     /* Number page media query ended */
-    /*********************************************/
+    /********************************************************************************/
     /* Last page media query started */
     .last_page .middlepart {
         height: 980px;
@@ -1267,9 +1370,8 @@ html,body{
     }
     /* Last page media query ended */
 }
-
-@media(max-width:340px){
-
+/******************************************************** Mobile S 320px media query stared ***********************************************************/
+@media(max-width:325px){
     /* Bcv page media query started */
     .bcv_downpart .leftpart .content_holder .background_shape {
         left: -55px;
@@ -1281,14 +1383,11 @@ html,body{
         left: 18px;
     }
     /* Bcv page media query ended */
-    /***********************************************/
+    /********************************************************************/
     /* chatbot page media query started */
     .chatbot_background {
         left: -52px;
     }
-    /* .chatbot_background img {
-        width: 400px;
-    } */
     .chatbot_div {
         height: 380px;
         width: 290px;
@@ -1308,183 +1407,29 @@ html,body{
     }
     .message-form textarea {
         height: 65px;
-    }
-        
+    }    
     /* chatbot media query ended */
-    /********************************************/
+    /**************************************************************************************/
     /* Number page media query started */
     .colgrad {
+        height: 90%;
         width: 104%;
-        left: -2%;
+        left: -4%;
+        top: 15%;
     }
     .pot {
-        left: 32%;
-        height: 91%;
+        left: 30%;
+        height: 80%;
     }
-    /* .line1{
-        width: 200px;
-    }
-    .img1{
-        width: 105px;
-    }
-    .line2{
-        width: 160px;
-    }
-    .img2{
-        width: 145px;
-    }
-    .line3{
-        width: 100px;
-    }
-    .img3{
-        width: 205px;
-    } */
     /* Number page media query ended */
-    /**********************************************/
+    /**************************************************************************************/
     /* Last page media query started */
     .last_page .middlepart {
-        height: 1070px;
+        height: 1000px;
     }
     .contentholder_mobile {
-        height: 1055px;
+        height: 1000px;
     }    
     /* Last page media query ended */
 }
-
-/* Bcv page css start */
-
-/* .bcv_page{
-    width: 100%;
-    height: ;
-} */
-
-/* .headerpart > .logoandlogin img{
-    justify-content: center;
-}
-.headerpart > .logoandlogin a{
-    justify-content: right;
-} */
-/* .leftheaderPart{
-    width: 100%;
-    justify-content: center;
-} */
-/* .usericon{
-    width: 100%;
-    justify-content: right;
-} */
-
-/* .bcv_page{
-    width: 100%;
-    height: 800px;
-    margin-bottom: 20px;
-}
-
-.chatus_page{
-    width: 100%;
-    height: 700px;
-    margin-bottom: 20px;
-}
-
-.learningCorners_page{
-    width: 100%;
-    height: 700px;
-    margin-bottom: 20px;
-}
-.quickPath{
-    width: 100%;
-    height: 700px;
-    margin-bottom: 20px;
-}
-
-.footer_page{
-    width: 100%;
-    height: 800px;
-    background-image: url('../careermania/Background/footer.png');
-} */
-
-/****************/
-
-/* Welcome page css */
-
-/* .headerpart{
-    height: 300px;
-}
-.footerpart{
-    height: 490px;
-}
-.headercontent{
-    height: 100%;
-    float: right;
-}
-.headercontent p{
-    color: blue;
-}
- .headercontent input{
-    width: 32%;
-    border-radius: 15px;
-}
-.usericon{
-    position: absolute;
-    right: 115px;
-    top: 50px;
-    border: 10px solid white;
-    border-radius: 30px;
-    background-color: white;
-}
-.leftheaderPart img{
-    margin-left: 275px;
-    width: 140px;
-}
-.leftheaderPart p{
-    margin-left: 265px;
-    font-size: 28px;
-    margin-top: -15px;
-}
-.leftheaderPart input {
-    margin-left: 115px;
-    width: 490px;
-    margin-top: 30px;
-    border-radius: 20px;
-    padding: 8px;
-}
-.rightfooterpart{
-    width: 500px;
-    height: 100%;
-    float: right;
-    margin-right: 33%;
-}
-.upper_part h2{
-    text-align: center;    
-    font-size: 44px;
-    margin-top: 100px;
-
-} */
-/* .upper_part p{
-    text-align: center;
-    font-size: 26px;
-}
-.lower_buttons{
-    width: 100%;
-    display: inline;
-    position: absolute;
-    bottom: 95px;
-    padding: 20px;
-}
-.lower_buttons button{
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 120px;
-    border-radius: 25px;
-}
-.Classes{
-    width: 160px !important;
-}
-.rightfooterpart img{
-    position: absolute;
-    bottom: 0;
-    width: 27px;
-    height: 50px;
-    margin-left: 235px;
-} */
-
-/**********************/
+/*************************************************************** Media Query Ended*********************************************************************/

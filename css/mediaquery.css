@@ -1,0 +1,615 @@
+@media(max-width:1025px){
+    /*Welcome page media query started*/
+    
+    .headerpart > .logoandlogin > .logo img {
+    width: 75px;
+    height: 120px;
+    }
+    /*Welcome page media query ended*/
+    /********************************/
+    /* Bcv page media query start */
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 630px;
+        top: 50px;
+        left: -69px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 230px;
+        left: 160px;
+        bottom: 0;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 193px;
+        left: 37px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder {
+        margin-top: 200px;
+        padding-right: 60px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder .contact_button {
+        margin-top: 5px;
+    }
+    /*Bcv page media query end */
+    /* Chatbot page media query started */
+
+    .chatbot_left_part .single_item span {
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .chatbot_left_part .single_item .develop_content{
+        margin-left: 10px;
+    }
+    .chatbot_div {
+        height: 430px;
+        right: 25px;
+        top: 0px;
+    }
+    .chatbot_background img {
+    width: 600px;
+    }
+    .chat_space {
+        height: 220px;
+    }
+    .message-form {
+        height: 235px;
+    }
+    .message-form input{
+        height: 40px;
+    }
+    .message-form textarea {
+        height: 75px;
+    }    
+
+    /* Chatbot page media query ended */
+    /*********************************************/
+    /* course page media query started */
+    .module {
+        max-width: 24%;
+    }
+    /* course page media query ended */
+    /********************************************/
+    /* Number page media query started */
+    .okpic img {
+        margin-right: 0px;
+        right: -10px;
+    }
+    /* Number page media query ended */
+    /***********************************************/
+    /* last page media query strated */
+    .last_page .middlepart {
+        height: 480px;
+    }
+    .card {
+        width: 90%;
+    }
+    /* Last page media query ended */
+}
+@media(max-width:770px){
+    /* welcome page media query */
+    .headerpart > .logoandlogin > .logo img {
+    width: 70px;
+    height: 115px;
+    }
+    .namesearch input {
+        width: 50%;
+    }
+/* welcome page media query end */
+/*********************************/
+/* Bcv page media query start */
+    .bcv_upperpart input {
+        width: 40%;
+    }
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 475px;
+        top: 178px;
+        left: -63px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 175px;
+        left: 100px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 156px;
+        left: 30px;
+    }
+
+    .bcv_downpart .rightpart .rightpart_content_holder {
+        font-size: 18px;
+        padding-right: 60px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder .contact_button{
+        margin-top: 50px;
+    }
+    /*Bcv page media query end */
+    /**********************************************/
+    /* Chatbot page media query started */
+    .chatbot_left_part .single_item {
+        margin-left: 0px;
+    }
+    .chatbot_left_part .single_item img {
+        width: 100px;
+    }
+    .chatbot_left_part .single_item span {
+        padding: 5px;
+        margin-left: 10px;
+    }
+    .chatbot_background {
+        top: -65px;
+        left: -55px;
+    }
+    .chatbot_background img {
+        width: 475px;
+    }
+
+    .chatbot_div {
+        height: 400px;
+        width: 345px;
+        right: 20px;    
+        top: 0px;
+    }
+    .chat_space {
+        height: 192px;
+    }
+    .message_input {
+        width: 295px;
+        left: 20px;
+    }
+    .message-form {
+        height: 210px;
+    }
+    .message-form input{
+        width: 242px;
+    }
+    .message-form textarea {
+        width: 242px;
+    }
+
+/* Chatbot page media query ended */
+/*****************************************************/
+/* course page media query started */
+    .module {
+        max-width: 24%;
+    }
+    .lefpart_cont_holder{
+        width: 100%;
+        height: 100%;
+    }
+    .colgrad {
+        width: 410px;
+        left: -30px;
+    }
+    .pot {
+        width: 140px;
+        left: 98px;
+    }
+
+/* Course page media query ended */
+/**********************************************/
+/* number page media query started */
+    .cont1 img {
+        width: 90px;
+        height: 100px;
+    }
+    .cont2 img {
+        width: 130px;
+        height: 140px;
+    }
+    .cont3 img {
+        width: 130px;
+        height: 140px;
+    }
+/* Number page media query ended */
+/*****************************************************/
+/* Last page media query started */
+    .last_page .middlepart {
+        height: 520px;
+    }
+    .card {
+        width: 90%;
+    }
+/* Last page media query ended */ 
+}
+@media(max-width:450px){
+    /* welcome page css started */
+    .welcome_page{
+        height: 700px;
+    }
+    .headerpart {
+    height: 325px;
+    }
+    .headerpart > .logoandlogin > .logo img {
+    width: 65px;
+    height: 110px;
+    }
+    .headerpart > .logoandlogin > .usericon {
+        right: 45px;
+    }
+    .upper_part > p{
+        font-size: 20px;
+    }
+    .footerpart .lower_buttons button {
+        margin: 9px;
+        width: 100px;
+    }
+    .footerpart .lower_buttons {
+        margin-bottom: 30px;
+    }
+  /* welcome page css ended */
+  /**************************************/
+  /* Bcv page media query  strted */
+    .bcv_page {
+        width: 100%;
+        height: 1100px;
+    }
+    .bcv_page #navbar .top_rig{
+        padding-right: 30px;
+    }
+    .bcv_upperpart input {
+        width: 65%;
+    }
+    .bcv_downpart .leftpart {
+        height: 475px;
+    }
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 112%;
+        top: 50px;
+        left: -35px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 39%;;
+        left: 135px;
+        bottom: 6px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 33%;
+        left: 40px;
+        bottom: 10px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder {
+        font-size: 16px;
+        padding-right: 10px;
+        margin-top: 0px;
+    }
+    .bcv_downpart .rightpart .rightpart_content_holder .contact_button {
+        display: flex;
+        justify-content: space-evenly;    
+    }
+  /* Bcv page media query ended */
+  /*************************************************/
+  /* Chatbot page media query started */
+    .chatbot_page {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .chatbot_left_part {
+        height: 400px;
+    }
+    .chatbot_right_part {
+        margin-top: 50px;
+        height: 400px;
+    }
+    .chatbot_background {
+        top: -70px;
+        left: -80px;
+    }
+    .chatbot_background img {
+        width: 108%;
+    }
+    .container {
+        padding: 5px;
+    }
+    .chatbot_div{
+        right: 40px;
+    }
+  /* Chatbot page media query ended */
+    /*****************************************************/
+  /* Cources page media query started */
+    .cources_page {
+        height: 1200px;
+    }
+    .cources_page .up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 240px;
+        width: 100%;
+        font-size: 28px;
+    }
+    .main_course_module {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+    }
+    .cources_page .contpart  {
+        height: 900px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cources_page .contpart .course_container {
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .schl, .med, .art, .engg, .cod, .sing, .dan, .fin, .self, .tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    /* Cources  page media query ended */
+    /****************************************************/
+    /* Number page media query started */
+    .number_page {
+        height: 1100px;
+    }
+    .uprpart p{
+        font-size: 28px;
+    }
+    .dnpart {
+        flex-direction: column;
+        height: 900px;
+    }
+    .lefpart {
+        width: 100%;
+        height: 780px;
+    }
+    .colgrad {
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    .pot {
+        width: 30%;
+        left: 30%;
+    }
+    .rigpart {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .line1{
+        width: 70%;
+    }
+    .img1{
+        width: 30%;
+    }
+    .line2{
+        width: 60%;
+    }
+    .img2{
+        width: 40%;
+    }
+    .cont3 {
+        height: 170px;
+    }
+    .line3{
+        width: 48%;
+    }
+    .img3{
+        width: 52%;
+    }
+    
+    /* Number page media query ended */
+    /************************************************/
+    /* Last page media query started */
+    .last_page{
+        height: 1600px;
+    }
+    .last_page .middlepart {
+        height: 870px;
+    }
+    .card {
+        width: 80%;
+    }
+    .last_page .middlepart .contentholder {
+        display: none;
+    }
+    .contentholder_mobile{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .last_page .lowerpart{
+        height: 600px;
+        flex-direction: column-reverse;
+    }
+    .last_page .lowerpart .icons {
+        height: 100px;
+    }
+    .last_page .lowerpart .links {
+        height: 450px;
+        margin-top: 30px;
+    }
+    .last_page .lowerpart .subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 375px;
+    }
+    .last_page .lowerpart .subscribe .lowercontentholder {
+        margin-left: 0px;
+    }
+    /* Last page media query ended */
+
+}
+
+@media(max-width:380px){
+    /* welcome page media query started */
+    .headerpart > .logoandlogin > .logo img {
+    width: 55px;
+    height: 90px;
+    }
+    .headerpart > .logoandlogin > .usericon {
+        right: 30px;
+    }
+    .upper_part > p {
+        font-size: 18px;
+    }
+    .footerpart .lower_buttons button {
+        margin: 10px;
+        width: 200px;
+    }
+    .footerpart .lower_buttons{
+        display: contents;
+    }
+    /* welcome page media query ended */
+    /**************************************/
+    /* Bcv page media query ended */
+    .bcv_page {
+        height: 1160px;
+    }
+    .bcv_downpart .leftpart {
+        height: 400px;
+    }
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        width: 400px;
+        top: 50px;
+        left: -35px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        width: 142px;
+        left: 112px;
+        bottom: 4px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        width: 121px;
+        left: 40px;
+        bottom: 10px;
+    }
+    
+    /* Bcv page media query ended */
+    /*********************************************/
+    /* chatboat page media query started */
+    .chatbot_page {
+        height: 1500px;
+    }
+    .chatbot_left_part {
+        height: auto;
+    }
+    .chatbot_left_part .single_item {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .chatbot_left_part .single_item img {
+        width: 200px;
+    }
+    .chatbot_left_part .single_item span {
+        text-align: center;
+    }
+    .chatbot_left_part .single_item .develop_content {
+        margin-left: 0px;
+    }
+    .chatbot_background {
+        left: -65px;
+    }
+    /* .chatbot_background img {
+        width: 475px;
+    } */
+    .chatbot_div {
+        /* right: 14px; */
+        right: 4%;
+    }
+    .chat_space {
+        height: 170px;
+    }
+    /* chatbot page media query ended */
+    /****************************************************/
+    /* Cources page media query started */
+    .cources_page {
+        height: 1200px;
+    }
+    /* Cources page media query ended */
+    /******************************************************************/
+    /* Number page media query started */
+    .rigpart {
+        padding-right: 0px;
+    }
+    /* Number page media query ended */
+    /*********************************************/
+    /* Last page media query started */
+    .last_page .middlepart {
+        height: 980px;
+    }
+    
+    .contentholder_mobile {
+        height: 980px;
+    }
+    /* Last page media query ended */
+}
+
+@media(max-width:325px){
+
+    /* Bcv page media query started */
+    .bcv_downpart .leftpart .content_holder .background_shape {
+        left: -55px;
+    }
+    .bcv_downpart .leftpart .content_holder .man_reading {
+        left: 80px;
+    }
+    .bcv_downpart .leftpart .content_holder .lamp {
+        left: 18px;
+    }
+    /* Bcv page media query ended */
+    /***********************************************/
+    /* chatbot page media query started */
+    .chatbot_background {
+        left: -52px;
+    }
+    /* .chatbot_background img {
+        width: 400px;
+    } */
+    .chatbot_div {
+        height: 380px;
+        width: 290px;
+    }
+    .message_input {
+        width: 250px;
+    }
+    .message-form {
+        height: 190px;
+    }
+    .message-form input {
+        height: 35px;
+        width: 188px;
+    }
+    .message-form textarea {
+        width: 188px;
+    }
+    .message-form textarea {
+        height: 65px;
+    }
+        
+    /* chatbot media query ended */
+    /********************************************/
+    /* Number page media query started */
+    .colgrad {
+        height: 90%;
+        width: 104%;
+        left: -4%;
+        top: 15%;
+    }
+    .pot {
+        left: 30%;
+        height: 80%;
+    }
+    /* Number page media query ended */
+    /**********************************************/
+    /* Last page media query started */
+    .last_page .middlepart {
+        height: 1000px;
+    }
+    .contentholder_mobile {
+        height: 1000px;
+    }    
+    /* Last page media query ended */
+}
+/**********************/
