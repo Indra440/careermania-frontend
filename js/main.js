@@ -29,15 +29,15 @@ $(document).ready(function(){
 
     $("#ClassesButton").click(function(){
         var origin = window.location.origin;
-        window.location.href = origin+'/html/signup.html?value="class"';
+        window.location.href = origin+'/html/signup.html?value=class';
     })
     $("#CollegesButton").click(function(){
         var origin = window.location.origin;
-        window.location.href = origin+'/html/signup.html?value="college"';
+        window.location.href = origin+'/html/signup.html?value=college';
     })
     $("#JobsButton").click(function(){
         var origin= window.location.origin;
-        window.location.href = origin+'/html/signup.html?value="job"';
+        window.location.href = origin+'/html/signup.html?value=job';
     })
 
     // $("#background_image").load("./html/background.html");
