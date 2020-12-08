@@ -1,8 +1,10 @@
 $(document).ready(function(){
     $(".dropdown").select2();
-    
+
     var url = window.location.href;
+    console.log("url ",url);
     let value = url.split("value=")[1]
+    console.log("value ",value);
     if(value == "class"){
         $("#class_btn").trigger();
     }else if(value == "college"){
