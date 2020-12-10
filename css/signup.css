@@ -51,7 +51,7 @@ body{
     background-color: #fff;
     border: 1px solid #aaaaaa9e;
     border-radius: 12px;
-    height: 35px;
+    height: 32px;
 }
 .select2-container--default .select2-selection--multiple {
     background-color: white;
@@ -98,18 +98,35 @@ body{
     font-size: 24px;
     margin-top: 40px;
 }
+.btn-group{
+    left: 20%;
+}
+button.btn.btn-primary {
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    border: 1px solid;
+    color: #fff;
+    background-color: black;
+    border-color: #da0b4e;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 1;
+}
  .btn{
     border-radius: 100px;
+}
+.btn-group button{
+    margin: 10px;
+    width: 150px;
 }
 .btn-group button:hover{
     color: #fff;
     background-color: black!important;
     border-color: black;
 }
- .btn{
-    border-radius: 100px;
-}
-
 .register-left img{
     margin-top: 15%;
     margin-bottom: 5%;
@@ -142,33 +159,6 @@ body{
     line-height: 0.6;
     float: right;
 }
-.btnSignup{
-    float: left;
-    border: 2px solid;
-    border-color: black;
-    border-radius: 1.5rem;
-    padding: 1%;
-    background: #da0b4e;
-    color: #fff;
-    font-weight: 600;
-    width: 50%;
-    cursor: pointer;
-}
-.btnLogin{
-    float: right;
-    border: 2px solid;
-    border-color: #da0b4e;
-    border-radius: 1.5rem;
-    padding: 1%;
-    background:  black;
-    color: #fff;
-    font-weight: 600;
-    width: 50%;
-    cursor: pointer;
-}
-.footer-buttons{
-    padding: 0% 1%;
-}
 .register .nav-tabs{
     margin-top: 3%;
     border: none;
@@ -194,7 +184,7 @@ body{
 .register .nav-tabs .nav-link.active{
     width: 100px;
     color: #da0b4e;
-    border: 2px solid #da0b4e;
+    border: 1px solid #da0b4e;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
@@ -207,20 +197,7 @@ body{
 .box{
     min-height: 94%;
 }
-.btn-group{
-    left: 22%;
-}
-button.btn.btn-primary {
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    background: transparent;
-    border: 2px solid;
-    margin-right: 33%;
-    color: #fff;
-    background-color: black;
-    border-color: #da0b4e;
-}
+
 .btn-primary:not(:disabled):not(.disabled).active{
     color: #fff;
     background-color: #da0b4e !important;
@@ -260,10 +237,42 @@ input{
     display: inline;
     width: 75%;
 }
+.btnSignup{
+    float: left;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 100px;
+    padding: 1%;
+    background: #da0b4e;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.btnLogin{
+    float: right;
+    border: 1px solid;
+    border-color: #da0b4e;
+    border-radius: 100px;
+    padding: 1%;
+    background:  black;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.footer-buttons{
+    padding: 0% 2%;
+}
+.table td {
+    padding: 10px;
+}
 .footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 40%;
-    margin-left: 255px;
 }
 .footer_content p{
     margin-bottom: 0px;
@@ -276,49 +285,57 @@ input{
 .signup_hr{
     width: 200px;
     margin-top: 0px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.4);
 }
 .footer_icons{
-    margin-bottom: 15px;
-    margin-left: 385px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .footer_icons img{
     width: 33px;
 }
+.form-control {
+     border-radius: 50px;
+}
 /*************************** Media Query Started **************************/
 @media(max-width: 1025px){
+     .register-right{
+    height: 780px;
+    margin-bottom: 50px;
+    }
     .btn-group {
     left: 16%;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 8px 16px;
+    font-size: 16px;
+}
+.btn-group button{
+    margin: 10px;
+    width: 140px;
 }
     .head_name_input {
     width: 72%;
 }
-    .footer_icons {
-    margin-left: 325px;
-}
-    .footer_content {
-    width: 40%;
-    margin-left: 220px;
-     }
     .header_content .logo_img {
     width: 65px;
     height: 95px;
 }
 }
  @media screen and (min-width:500px) and (max-width:770px) {
+     .register-right{
+    height: 750px;
+    margin-bottom: 40px;
+    }
     .header_content .logo_img {
     width: 60px;
     height: 90px;
      }
      .header_content .logo_text {
     font-size: 22px;
-     }
-     .footer_icons {
-    margin-left: 230px;
-     } 
-     .footer_content {
-    width: 40%;
-    margin-left: 165px;
      }
      .register .register-form {
     font-size: 14px;
@@ -327,26 +344,37 @@ input{
     font-size: 14px;
 }
      .btn-group {
-    left: 8%;
+    left: 9%
+}
+     .btn-group button{
+    margin: 10px;
+    width: 120px;
 }
     .btn-group-lg>.btn, .btn-lg {
     padding: 5px 5px;
-        font-size: 18px;
+    font-size: 16px;
+     }
+     .select2-container--default .select2-selection--single {
+         height: 30px;
      }
      .head_name_input {
     width: 60%;
     }
+     .footer_content p{
+   font-size: 16px;
+}
 }
 @media(max-width:480px){
     .forht {
-        height: 11%;
+        height: 10%;
     }
     .forbtn {
     height: 5%;
 
     }
     .register-right{
-    height: 1150px;
+    height: 1080px;
+    margin-bottom: 20px;
     }
     .header_content .logo_img {
     width: 55px;
@@ -356,46 +384,67 @@ input{
     font-size: 20px;
      }
       .btn-group {
-    left: -2%;
+    left: 3%;
+    }
+      .btn-group button{
+    margin: 10px;
+    width: 90px;
+    }
+    .btn-group-lg>.btn, .btn-lg {
+    padding: 5px 5px;
+    font-size: 16px;
+     }
+    .footer-buttons {
+    padding: 0% 3%;
 }
+    .btnSignup,.btnLogin{
+        font-weight: 400;
+        font-size: 16px;
+        width: 100px;
+    }
     .head_name_input {
     display: inline;
-        width: 73%;
+        width: 71%;
     }
     .register-right {
         width: 90% !important;
         left: 0%;
     }
-    button.btn.btn-primary {
-    font-size: 14px;
-}
     .footer_content {
     font-size: 14px;
-    width: 40%;
-    margin-left: 110px;
-}
-    .footer_icons {
-    margin-left: 145px;
 }
     .signup_hr {
     width: 140px;
 }
 }
 @media (max-width: 380px){
+    .register-right{
+    height: 1050px;
+    }
 .head_name_input {
     display: inline;
-    width: 70%
+    width: 66%
     }
-.btn-group {
-    left: 10px;
-}
-.footer_content {
-    width: 40%;
-    margin-left: 95px;
-}
-.footer_icons {
-    margin-left: 125px;
-}
+    .forht {
+        height: 9%;
+    }
+    .header_content .logo_img {
+    width: 50px;
+    height: 80px;
+     }
+    .header_content .logo_text {
+    font-size: 18px;
+     }
+      .btn-group {
+    left: 1%;
+    }
+      .btn-group button{
+    margin: 8px;
+    width: 80px;
+    }
+    .btnSignup,.btnLogin{
+        width: 80px;
+    }
     .signup_hr {
     width: 130px;
 }
@@ -404,25 +453,59 @@ input{
 }
 }
 @media (max-width: 325px){
-.btn-group {
-    left: -5px;
-}
-.footer_content {
+    .register-right{
+    height: 970px;
+    }
+    .header_content {
+    margin: 0px;
+    }
+    .btn-group {
+    left: 6px;
+    }
+    .btn-group button{
+    margin: 6px;
+    width: 65px;
+    }
+    .form-group {
+    padding-bottom: 8px;
+    }
+    .header_content .logo_img {
+    width: 55px;
+    height: 75px;
+     }
+    .header_content .logo_text {
+    font-size: 16px;
+     }
+    .forht {
+        height: 10%;
+    }
+    .forbtn {
+    height: 4%;
+    }
+    .col-md-12{
+    padding-right: 10px;
+    padding-left: 10px;
+    }
+    .btnSignup,.btnLogin{
+        font-weight: 300;
+        font-size: 14px;
+        padding: 2%;
+        width: 70px;
+    }
+    .footer_content {
     font-size: 12px;
-    width: 40%;
-    margin-left: 80px;
-}
-.footer_icons {
-    margin-left: 100px;
-}
-button.btn.btn-primary{
-        font-size: 12px;
+    }
+    button.btn.btn-primary{
+        font-size: 14px;
     }
     .register .register-form {
     font-size: 12px;
 }
      .register .register-form table td {
     font-size: 12px;
+}
+    .footer-buttons{ 
+    padding: 0% 2%;
 }
     .signup_hr {
     width: 110px;
@@ -432,7 +515,7 @@ button.btn.btn-primary{
 }
     .head_name_input {
     display: inline;
-    width: 64%
+    width: 59%
     }
 
 }

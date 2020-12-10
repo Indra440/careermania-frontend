@@ -4,6 +4,7 @@ $(document).ready(function(){
     var sticky = navbar.offsetTop;
     console.log("sticky = ",sticky);
     window.onscroll = function() {stickyFunction()};
+    run();
     hmburgerFunction();
     $(window).resize(function() {
         hmburgerFunction();
@@ -13,7 +14,7 @@ $(document).ready(function(){
         myFunction();
     })
 
-    var count = 1;
+    // var count = 1;
     window.setInterval(function(){
         bcvTextChange();
     },3000);
@@ -55,6 +56,94 @@ $(document).ready(function(){
     //         (index == 2)?((count >= 2)?(count=0):(count= cur_index)):"";
     //     })
     // }
+
+
+    //////////////////////////////////////////////////////////////////////////////////
+
+    // Add something to given element placeholder
+    function addToPlaceholder(toAdd, el) {
+        el.attr('placeholder', el.attr('placeholder') + toAdd);
+        // Delay between symbols "typing" 
+        return new Promise(resolve => setTimeout(resolve, 100));
+    }
+    // Cleare placeholder attribute in given element
+    function clearPlaceholder(el) {
+        el.attr("placeholder", "");
+    }
+    // Print one phrase
+    function printPhrase(phrase, el) {
+        return new Promise(resolve => {
+            // Clear placeholder before typing next phrase
+            clearPlaceholder(el);
+            let letters = phrase.split('');
+            // For each letter in phrase
+            letters.reduce(
+                (promise, letter, index) => promise.then(_ => {
+                    // Resolve promise when all letters are typed
+                    if (index === letters.length - 1) {
+                        // Delay before start next phrase "typing"
+                        setTimeout(resolve, 2000);
+                    }
+                    return addToPlaceholder(letter, el);
+                }),
+                Promise.resolve()
+            );
+        });
+    } 
+    // Print given phrases to element
+    function printPhrases(phrases, el) {
+        // For each phrase
+        // wait for phrase to be typed
+        // before start typing next
+        phrases.reduce(
+            (promise, phrase,index) => promise.then(_ =>{
+                if(index === phrases.length-1){
+                    clearPlaceholder(el);
+                    setTimeout(run,2000);
+                }
+                return printPhrase(phrase, el);   
+            }), 
+            Promise.resolve()
+        );
+    }
+    // Start typing
+    function run() {
+        console.log("Its hitting");
+        let phrases = [
+            "Try Login",
+            "Try signup",
+            "Try Join"
+        ];
+        printPhrases(phrases, $('#autosuggestfor'));
+    }
+
+    $("body").click(function(){
+        $("#autosuggestfor").removeClass("open")
+        $(".bcv_upperpart .suggestionList").html("");
+    })
+
+    $(".bcv_upperpart #autosuggestfor").keyup(function(e){
+        let cur_search_value = $("#autosuggestfor").val();
+        let search_result = "";
+        $(".bcv_upperpart .suggestionList").html(search_result);
+        $("#autosuggestfor").removeClass("open")
+        if(cur_search_value.length >=3){
+            let final_search_value = cur_search_value.toLowerCase();
+            final_search_value.includes("log") ? search_result += "<li><a href='./html/login.html'>Login in Careermania</a></li>" : "";
+            final_search_value.includes("sig") ? search_result += "<li><a href='./html/signup.html'>Signup in careermania</a></li>" : "";
+            final_search_value.includes("joi") ? search_result += "<li><a href='./html/signup.html'>Join in careermania</a></li>" : "";
+        }
+        if(search_result !=""){
+            $("#autosuggestfor").addClass("open")
+            $(".bcv_upperpart .suggestionList").html(search_result);
+        }
+        // console.log(cur_value_exp);
+        // console.log(cur_value_exp.test("login"));
+    })
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////
 
     let index = 0;
     function bcvTextChange(){
@@ -113,7 +202,7 @@ $(document).ready(function(){
     });
 
     function stickyFunction() {
-        if (window.pageYOffset >= sticky) {
+        if (window.pageYOffset >= (sticky+100)) {
             navbar.classList.add("sticky")
         } else {
             navbar.classList.remove("sticky");
