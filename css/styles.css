@@ -809,6 +809,9 @@ html,body{
         align-items: center;
         text-align: center;
     }
+    .last_page_upperpart p{
+    font-size: 36px;
+    }
     .last_page .middlepart{
         width: 100%;
         height: 420px;
@@ -939,7 +942,7 @@ html,body{
 /************************************************************ Main CSS ended **************************************************************************/
 /********************************************************** media query started ***********************************************************************/
 /***************************************************** Laptop M 1024px media query stared *************************************************************/
-@media(max-width:1025px){
+@media(max-width:1430px){
     /*Welcome page media query started*/
     .welcome_page {
     height: 705px;
@@ -1100,13 +1103,41 @@ html,body{
     /* course page media query started */
     .module {
         max-width: 24%;
+        }
+    .cources_page .up p {
+        font-size: 32px;
+    }
+    .courceimage {
+    height: 90px;
+    width: 110px;
+    }
+    .cources_page .contpart .course_container {
+    font-size: 18px;
     }
     /* course page media query ended */
     /**********************************************************************************/
     /* Number page media query started */
+    .uprpart p {
+        font-size: 32px;
+    }
     .okpic img {
         margin-right: 0px;
         right: -10px;
+    }
+    .line1, .line2, .line3 {
+    font-size: 22px;
+    }
+    .cont1 img {
+        width: 110px;
+        height: 110px;
+    }
+    .cont2 img {
+        width: 155px;
+        height: 155px;
+    }
+    .cont3 img {
+        width: 150px;
+        height: 150px;
     }
     /* Number page media query ended */
     /*************************************************************************************/
@@ -1117,10 +1148,16 @@ html,body{
     .card {
         width: 90%;
     }
+    .last_page_upperpart p{
+    font-size: 34px; 
+    }
+    .last_page .lowerpart {
+        font-size: 16px;
+    }
     /* Last page media query ended */
 }
 /******************************************************** Tablet 768px media query stared ************************************************************/
-@media(max-width:770px){
+@media(max-width:1020px){
     /* welcome page media query */
     .welcome_page {
     height: 635px;
@@ -1281,36 +1318,66 @@ html,body{
     /* Chatbot page media query ended */
     /*************************************************************************************/
     /* course page media query started */
+     .cources_page{
+        height: 600px;
+    }
+    .cources_page .up {
+        height: 180px;
+    }
+    .cources_page .up p {
+        font-size: 30px;
+    }
     .module {
-        max-width: 24%;
+        max-width: 22%;
     }
-    .lefpart_cont_holder{
-        width: 100%;
-        height: 100%;
+    .courceimage {
+    height: 85px;
+    width: 100px;
     }
-    .colgrad {
-        width: 410px;
-        left: -30px;
-    }
-    .pot {
-        width: 140px;
-        left: 98px;
+    .cources_page .contpart .course_container {
+    font-size: 16px;
     }
 
     /* Course page media query ended */
     /***************************************************************************************/
     /* number page media query started */
+    .number_page{
+        height: 780px;
+    }
+    .number_page .uprpart{
+        height: 130px;  
+    }
+    .number_page .uprpart p {
+    font-size: 30px;
+    }
+      .lefpart_cont_holder{
+        width: 100%;
+        height: 100%;
+    }
+    .colgrad {
+        width: 390px;
+        height: 420px;
+        left: -35px;
+    }
+    .pot {
+        width: 135px;
+        height: 360px;
+        left: 75px;
+    }
+    .line1, .line2, .line3 {
+    font-size: 20px;
+    }
     .cont1 img {
-        width: 90px;
+        width: 100px;
         height: 100px;
     }
     .cont2 img {
-        width: 130px;
+        width: 140px;
         height: 140px;
     }
     .cont3 img {
         width: 130px;
-        height: 140px;
+        height: 130px;
     }
     /* Number page media query ended */
     /*****************************************************************************************/
@@ -1321,10 +1388,16 @@ html,body{
     .card {
         width: 90%;
     }
+    .last_page_upperpart p{
+    font-size: 32px;
+    }
+    .last_page .lowerpart {
+        font-size: 14px;
+    }
     /* Last page media query ended */ 
 }
 /****************************************************** Mobile L 425px media query stared *************************************************************/
-@media(max-width:450px){
+@media(max-width:760px){
     /* welcome page media query started */
     .welcome_page{
         height: 650px;
@@ -1525,13 +1598,13 @@ html,body{
         height: 400px;
     }
     .colgrad {
-        width: 100%;
+        width: 93%;
         left: 0px;
         top: 0px;
     }
     .pot {
-        width: 30%;
-        left: 30%;
+        width: 28%;
+        left: 28%;
     }
     .rigpart {
         padding-top: 20px;
@@ -1609,7 +1682,7 @@ html,body{
     /* Last page media query ended */
 }
 /******************************************************** Mobile M 375px media query stared ***********************************************************/
-@media(max-width:380px){
+@media(max-width:420px){
     /* welcome page media query started */
     .welcome_page{
         height: 625px;
@@ -1781,17 +1854,22 @@ html,body{
     /* Number page media query ended */
     /********************************************************************************/
     /* Last page media query started */
+    .last_page_upperpart {
+    font-size: 28px;
+    }
     .last_page .middlepart {
         height: 980px;
     }
-    
+    .last_page_upperpart p{
+    font-size: 30px;
+    }
     .contentholder_mobile {
         height: 980px;
     }
     /* Last page media query ended */
 }
 /******************************************************** Mobile S 320px media query stared ***********************************************************/
-@media (max-width:325px){
+@media screen and (min-width:00px) and (max-width:370px){
     /* Bcv page media query started */
     .bcv_page {
     height: 850px;
@@ -1878,8 +1956,18 @@ html,body{
         height: 65px;
     }    
     /* chatbot media query ended */
+   
+    /**************************************************************************************/
+    /* Cources page media query started */
+    .cources_page .up p {
+    font-size: 30px;
+    }
+    /* Cources page media query started */
     /**************************************************************************************/
     /* Number page media query started */
+    .number_page .uprpart p {
+    font-size: 30px;
+    }
     .colgrad {
         height: 90%;
         width: 104%;
