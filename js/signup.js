@@ -7,13 +7,13 @@ $(document).ready(function(){
     console.log("value ",value);
     if(value == "class"){
         console.log("1");
-        $("#class_btn").trigger();
+        $("#class_btn").click();
     }else if(value == "college"){
         console.log("2");
-        $("#college_btn").trigger();
+        $("#college_btn").click();
     }else if(value == "job") {
         console.log("3");
-        $("#job_btn").trigger();
+        $("#job_btn").click();
     }
 
     $("#college_btn").click(function(){
