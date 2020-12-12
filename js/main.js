@@ -21,7 +21,7 @@ $(document).ready(function(){
     // var count = 1;
     window.setInterval(function(){
         bcvTextChange();
-    },3000);
+    },2000);
 
     var scrollLink = $('.scroll');
     // Smooth scrolling

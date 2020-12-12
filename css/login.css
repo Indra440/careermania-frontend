@@ -1,16 +1,27 @@
 
 html,body{
-    height: 100% !important;
+    /* height: 100% !important; */
 }
 body{
     margin: 0;
     width: 100% !important;
+    background-color: #1100000f;
     display: flex;
     justify-content: center;
+    height: 790px;
+}
+.main_body{
+    width: 100%;
+    height: 790px;
+    background-image: url(../asset/header.png),url(../Background/lower_left.png),url(../Background/lower_right.png);
+    background-position: left top,left bottom, right bottom;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size: 100% 40%,30%,50%;
 }
 .container{
     display: flex;
     justify-content: center;
+    height: 790px;
 }
 .table td{
     padding-top: 10px !important;
@@ -63,13 +74,18 @@ body{
     width: 50%;
     cursor: pointer;
 }
+.btnLogin:hover,.btnSignup:hover{
+    background-color: #da0b4e;
+    color: white;
+    border: 1px solid black;
+}
 .btnLogin{
     float: right;
     border: 1px solid;
-    border-color: black;
+    border-color: #da0b4e;
     border-radius: 1.5rem;
     padding: 2%;
-    background: #da0b4e;
+    background:  black;
     color: #fff;
     font-weight: 600;
     width: 50%;

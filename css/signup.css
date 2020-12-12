@@ -1,15 +1,24 @@
 
 html,body{
-    height: 100% !important;
+    /* height: 100% !important; */
 }
 body{
     margin: 0;
     width: 100% !important;
+    background-color: #1100000f;
     overflow-y: overlay;
-    overflow-x: hidden;
+    height: 950px;
 }
 .hide{
     display: none;
+}
+.main-body{
+    width: 100%;
+    height: 950px;
+    background-image: url(../asset/header.png),url(../Background/lower_left.png),url(../Background/lower_right.png);
+    background-position: left top,left bottom, right bottom;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size: 100% 40%,30%,50%;
 }
 #signup_page{
     z-index: 1;
@@ -17,6 +26,7 @@ body{
 .container {
     display: flex;
     justify-content: center;
+    height: 930px;
 }
 .forht{
     height:15%;
@@ -26,7 +36,6 @@ body{
 }
 .register{
     z-index: 1;
-    height: 100%;
 }
 .table{
     margin-bottom: 0px !important;
@@ -240,14 +249,19 @@ input{
 .btnSignup{
     float: left;
     border: 1px solid;
-    border-color: black;
+    border-color: #da0b4e;
     border-radius: 100px;
     padding: 1%;
-    background: #da0b4e;
+    background: black;
     color: #fff;
     font-weight: 600;
     width: 50%;
     cursor: pointer;
+}
+.btnSignup:hover,.btnLogin:hover{
+    background-color:#da0b4e;
+    color: white;
+    border: 1px solid black;
 }
 .btnLogin{
     float: right;
@@ -384,7 +398,7 @@ input{
     font-size: 20px;
      }
       .btn-group {
-    left: 3%;
+        left: 2%;
     }
       .btn-group button{
     margin: 10px;
@@ -403,8 +417,8 @@ input{
         width: 100px;
     }
     .head_name_input {
-    display: inline;
-        width: 71%;
+        display: inline;
+        width: 68%;
     }
     .register-right {
         width: 90% !important;
@@ -414,8 +428,11 @@ input{
     font-size: 14px;
 }
     .signup_hr {
-    width: 140px;
-}
+        width: 140px;
+    }
+    .main-body{
+        height: 1150px;
+    }
 }
 @media (max-width: 380px){
     .register-right{
@@ -423,7 +440,7 @@ input{
     }
 .head_name_input {
     display: inline;
-    width: 66%
+    width: 60%
     }
     .forht {
         height: 9%;
@@ -515,7 +532,7 @@ input{
 }
     .head_name_input {
     display: inline;
-    width: 59%
+    width: 55%
     }
 
 }

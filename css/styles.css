@@ -44,6 +44,10 @@ html,body{
     width: 100%;
     height: 790px;
     overflow: hidden;
+    background-image: url(../asset/header.png),url(../Background/lower_left.png),url(../Background/lower_right.png);
+    background-position: left top,left bottom, right bottom;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size: 100% 40%,30%,50%;
 }
 #background_image .header{
     position: absolute;
@@ -55,18 +59,14 @@ html,body{
 
 .headerpart{
     height: 420px;
-    background-image: url(../asset/header.png);
-    background-position:  left top;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .footerpart{
-    background-image: url(../Background/lower_left.png),url(../Background/lower_right.png),url(../asset/behind_girl4.png);
-    background-position: left bottom, right bottom,right bottom;
-    background-repeat: no-repeat, no-repeat,no-repeat;
-    background-size: 30%,30%,30%;
-    height: fit-content;
+    /* background-image: url(../Background/lower_left.png),url(../Background/lower_right.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%,50%;
+    height: fit-content; */
 }
 .headerpart > .logoandlogin{
     display: flex;
@@ -784,10 +784,10 @@ html,body{
     }
     .okpic img{
         position: absolute;
-        margin-top: 33px;
+        margin-top: 45px;
         height: 30px !important;
         width: 30px !important;
-        margin-left: 140px;
+        margin-left: 325px;
     }
     .cont2 img{
         width: 185px;
@@ -856,7 +856,7 @@ html,body{
     }
     .card{
         margin: 30px;
-        width: 100%;
+        width: 96%;
         border-radius: 40px !important;
     }
     .one{
@@ -933,16 +933,35 @@ html,body{
         list-style: none;
         padding: 15px;
     }
-    .last_page .lowerpart .subscribe{
-        height: 100%;   
-    }
     .last_page .lowerpart .subscribe .lowercontentholder{
         margin-left: 75px;
         height: 90%;
     }
-    .lowercontentholder input{
+    .lowercontentholder .form-control{
         margin-top: 20px;
         border-radius: 30px;
+        width: 80%;
+    }
+    .lowercontentholder .subscribeinput{
+        background-color: #da0b4e;
+        border: 1px solid  #da0b4e;
+        color: white;
+        padding-right: 14%;
+    }
+    .lowercontentholder .subscribebutton{
+        margin-top: 0px;
+        z-index: 1 !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 30px;
+        width: 30% !important;
+        background: white;
+        color: black;
+        margin-right: 15px;
+    }
+    .lowercontentholder .subscribeinput::placeholder{
+        color: white;
     }
     .lowercontentholder .contact_info{
         margin-top: 20px;
@@ -1141,8 +1160,8 @@ html,body{
         font-size: 32px;
     }
     .okpic img {
-        margin-right: 0px;
-        right: -10px;
+        right: 120px;
+        top: 64px;
     }
     .line1, .line2, .line3 {
         font-size: 22px;
@@ -1402,6 +1421,10 @@ html,body{
     .cont3 img {
         width: 130px;
         height: 130px;
+    }
+    .okpic img{
+        right: 57px;
+        top: 76px;
     }
     /* Number page media query ended */
     /*****************************************************************************************/
@@ -1668,6 +1691,10 @@ html,body{
     }
     .img3{
         width: 52%;
+    }
+    .okpic img {
+        right: 42px;
+        top: 62px;
     }    
     /* Number page media query ended */
     /***********************************************************************/
@@ -1709,6 +1736,18 @@ html,body{
     }
     .last_page .lowerpart .subscribe .lowercontentholder {
         margin-left: 0px;
+    }
+    .lowercontentholder .subscribebutton {
+        margin-top: 0px;
+        z-index: 1 !important;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        border-radius: 30px;
+        width: 30% !important;
+        background: white;
+        color: black;
+        margin-right: 15px;
     }
     /* Last page media query ended */
 }
@@ -1895,6 +1934,9 @@ html,body{
     .rigpart {
         padding-right: 0px;
     }
+    .okpic img {
+        right: 26px;
+    }
     /* Number page media query ended */
     /********************************************************************************/
     /* Last page media query started */
@@ -2021,6 +2063,10 @@ html,body{
     .pot {
         left: 30%;
         height: 80%;
+    }
+    .okpic img {
+        right: 36px;
+        top: 76px;
     }
     /* Number page media query ended */
     /**************************************************************************************/
