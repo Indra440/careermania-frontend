@@ -889,7 +889,7 @@ html,body{
     }
     .last_page .lowerpart{
         background-color: #696969;
-        background-image: url(../Background/lower_left.png),url(../Background/lower_right.png);
+        background-image: url(../Background/lower_left.png),url(../Background/lower_rights.png);
         background-position: left bottom, right bottom;
         background-repeat: no-repeat, no-repeat;
         background-size: 30%,30%;
