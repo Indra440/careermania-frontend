@@ -275,7 +275,7 @@ html,body{
     background-color: #fff;
     border-radius: 0 0 25px 25px;
     position: absolute;
-    top: 1038px;
+    top: 1059px;
     width: 32%;
     text-align: left;
     font-size: 12px;
@@ -378,6 +378,11 @@ html,body{
     padding: 8px;
     width: 120px;
 }
+.bcv_downpart .rightpart .rightpart_content_holder .contact_button button:hover{
+    color: #fff;
+    background-color: #da0b4e !important;
+    border-color: black;
+}
 /*bcv page css end */
 /**************************************************************** chatbot page strted *****************************************************************/
 
@@ -476,6 +481,11 @@ html,body{
         height: 50px;
         position: absolute;
         z-index:1;
+    }
+    .chatbot_buttons button:hover{
+        color: #fff;
+        background-color: #da0b4e !important;
+        border-color: black;
     }
     .chat_space{
         position: absolute;
@@ -579,6 +589,11 @@ html,body{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .message-form .submit_button button:hover{
+        color: #fff;
+        background-color: #da0b4e !important;
+        border-color: black;
     }
 
 /* Chatbot page ended */
@@ -810,7 +825,7 @@ html,body{
         text-align: center;
     }
     .last_page_upperpart p{
-    font-size: 36px;
+        font-size: 36px;
     }
     .last_page .middlepart{
         width: 100%;
@@ -992,6 +1007,9 @@ html,body{
     width: 100%;
     height: 700px;
     }
+    .bcv_upperpart .suggestionList{
+        top: 974px;
+    }
     .bcv_downpart {
     width: 100%;
     height: 500px;
@@ -1094,9 +1112,11 @@ html,body{
     }
     .message-form input{
         height: 40px;
+        width: 270px;
     }
     .message-form textarea {
         height: 75px;
+        width: 270px;
     }    
     /* Chatbot page media query ended */
     /*************************************************************************************/
@@ -1125,7 +1145,7 @@ html,body{
         right: -10px;
     }
     .line1, .line2, .line3 {
-    font-size: 22px;
+        font-size: 22px;
     }
     .cont1 img {
         width: 110px;
@@ -1149,7 +1169,7 @@ html,body{
         width: 90%;
     }
     .last_page_upperpart p{
-    font-size: 34px; 
+        font-size: 34px; 
     }
     .last_page .lowerpart {
         font-size: 16px;
@@ -1207,6 +1227,10 @@ html,body{
     }
     .bcv_upperpart input {
         width: 45%;
+    }
+    .bcv_upperpart .suggestionList{
+        width: 45%;
+        top: 904px;
     }
     .bcv_downpart {
     width: 100%;
@@ -1309,10 +1333,10 @@ html,body{
         height: 210px;
     }
     .message-form input{
-        width: 242px;
+        width: 210px;
     }
     .message-form textarea {
-        width: 242px;
+        width: 210px;
     }
 
     /* Chatbot page media query ended */
@@ -1331,11 +1355,11 @@ html,body{
         max-width: 22%;
     }
     .courceimage {
-    height: 85px;
-    width: 100px;
+        height: 85px;
+        width: 100px;
     }
     .cources_page .contpart .course_container {
-    font-size: 16px;
+        font-size: 16px;
     }
 
     /* Course page media query ended */
@@ -1348,7 +1372,7 @@ html,body{
         height: 130px;  
     }
     .number_page .uprpart p {
-    font-size: 30px;
+        font-size: 30px;
     }
       .lefpart_cont_holder{
         width: 100%;
@@ -1365,7 +1389,7 @@ html,body{
         left: 75px;
     }
     .line1, .line2, .line3 {
-    font-size: 20px;
+        font-size: 20px;
     }
     .cont1 img {
         width: 100px;
@@ -1389,7 +1413,7 @@ html,body{
         width: 90%;
     }
     .last_page_upperpart p{
-    font-size: 32px;
+        font-size: 32px;
     }
     .last_page .lowerpart {
         font-size: 14px;
@@ -1449,7 +1473,11 @@ html,body{
     padding-right: 30px;
     }
     .bcv_upperpart input {
-    width: 70%;
+         width: 70%;
+    }
+    .bcv_upperpart .suggestionList{
+        width: 70%;
+        top: 919px;
     }
     .bcv_downpart {
     width: 100%;
@@ -1525,14 +1553,17 @@ html,body{
         padding: 5px;
     }
     .chatbot_div {
-    height: 380px;
-    right: 17px;
-    top: 110px;
-    width: 360px;
+        height: 380px;
+        right: 17px;
+        top: 110px;
+        width: 360px;
     }
     .message_input {
-    width: 320px;
-    left: 20px;
+        width: 320px;
+        left: 20px;
+    }
+    .message-form {
+        height: 200px;
     }
     /* Chatbot page media query ended */
     /*************************************************************************************/
@@ -1718,8 +1749,11 @@ html,body{
         display: contents;
     }
     .scroll{
-    margin-bottom: 10px;
-    margin-top: 25px;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    .scroll.first_menu{
+        margin-top: 0px !important;
     }
     .scroll img{
         width: 25px;
@@ -1731,10 +1765,20 @@ html,body{
     .bcv_page {
         height: 900px;
     }
-    .bcv_downpart {
-    width: 100%;
-    height: 700px;
+    .bcv_upperpart .suggestionList{
+        top: 894px;
     }
+    #hamburgerMenu a {
+        padding: 5px 16px;
+    }
+    #hamburgerMenu a.last_menu{
+        padding-bottom: 15px;
+    }
+    .bcv_downpart {
+        width: 100%;
+        height: 700px;
+    }
+    
     .bcv_downpart .leftpart {
         height: 350px;
     }
@@ -1855,13 +1899,13 @@ html,body{
     /********************************************************************************/
     /* Last page media query started */
     .last_page_upperpart {
-    font-size: 28px;
+        font-size: 28px;
     }
     .last_page .middlepart {
         height: 980px;
     }
     .last_page_upperpart p{
-    font-size: 30px;
+        font-size: 30px;
     }
     .contentholder_mobile {
         height: 980px;
@@ -1947,10 +1991,10 @@ html,body{
     }
     .message-form input {
         height: 35px;
-        width: 188px;
+        width: 170px;
     }
     .message-form textarea {
-        width: 188px;
+        width: 170px;
     }
     .message-form textarea {
         height: 65px;
@@ -1960,13 +2004,13 @@ html,body{
     /**************************************************************************************/
     /* Cources page media query started */
     .cources_page .up p {
-    font-size: 30px;
+        font-size: 30px;
     }
     /* Cources page media query started */
     /**************************************************************************************/
     /* Number page media query started */
     .number_page .uprpart p {
-    font-size: 30px;
+        font-size: 30px;
     }
     .colgrad {
         height: 90%;

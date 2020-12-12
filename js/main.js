@@ -14,6 +14,10 @@ $(document).ready(function(){
         myFunction();
     })
 
+    $("#hamburgerMenu .scroll").click(function(){
+        myFunction();
+    })
+
     // var count = 1;
     window.setInterval(function(){
         bcvTextChange();
