@@ -9,14 +9,15 @@ body{
     display: flex;
     justify-content: center;
     height: 790px;
-}
-.main_body{
-    width: 100%;
-    height: 790px;
     background-image: url(../asset/header.png),url(../Background/lower_left.png),url(../Background/lower_right.png);
     background-position: left top,left bottom, right bottom;
     background-repeat: no-repeat,no-repeat, no-repeat;
     background-size: 100% 40%,30%,50%;
+}
+.main_body{
+    width: 100%;
+    height: 790px;
+    backdrop-filter: blur(3px);   
 }
 .container{
     display: flex;
@@ -35,7 +36,13 @@ body{
     border-radius: 15px;
     height: 600px;
 }
-
+.register-rightt{
+    margin: 20%;
+    background: #f8f9fa;
+    border: 2px solid #f8f9fa;
+    border-radius: 15px;
+    height: 400px;
+}
 .logo{
     margin: 10px;
     display: flex;
@@ -75,7 +82,7 @@ body{
     cursor: pointer;
 }
 .btnLogin:hover,.btnSignup:hover{
-    background-color: #da0b4e;
+    background-color: #da0b4e !important;
     color: white;
     border: 1px solid black;
 }
@@ -90,6 +97,28 @@ body{
     font-weight: 600;
     width: 50%;
     cursor: pointer;
+}
+.submit_button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#forgot_button:hover{
+        color: #fff;
+        background-color: #da0b4e !important;
+        border-color: black;
+    }
+#forgot_button{
+    color: #fff;
+    border: 1px solid;
+    background-color: black;
+    border-color: #da0b4e;     
+}
+.login_link{
+    margin-top: 40px;
+}
+.forgot-password-link p a,.login_link a {
+    text-decoration: none;
 }
 .footer_content{
     display: flex;
@@ -121,6 +150,12 @@ body{
 }
 .footer_icons img{
     width: 33px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: black !important;
+    border: 1px solid;
+    border-color: #da0b4e !important;
 }
  @media screen and (min-width:500px) and (max-width:800px) {
      .btnLogin, .btnSignup{

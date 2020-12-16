@@ -22,7 +22,7 @@
                         </div>
                         <div class="col-md-12 forbtn">
                             <div class="btn-group btn-group-lg">
-                                <button type="button" class="btn btn-primary active" id="college_btn" value="college">Colleges</button>
+                                <button type="button" class="btn btn-primary active" id="college_btn" value="colleges">Colleges</button>
                                 <button type="button" class="btn btn-primary" id="class_btn" value="classes">Classes</button>
                                 <button type="button" class="btn btn-primary" id="job_btn" value="jobs">Jobs</button>
                             </div>
@@ -30,6 +30,7 @@
                                 <div class="col-md-12">
                                     <div class="row register-form" id="main_form">
                                         <form method="POST">
+                                            <input type="text" class="form-control hide" id="form_define" value="colleges" />
                                             <div class="col-md-6 left-form">
                                                 <div class="form-group email_id">
                                                     <label for="email" id="email_title">College Email id:</label><br>
@@ -51,7 +52,7 @@
                                                 </div>
                                                 <div class="form-group merchent_name ">
                                                     <label for="Name" id="merchent_name_title" > Collage Name:</label><br>
-                                                    <input type="password" class="form-control" placeholder="Collage name" value="" />
+                                                    <input type="text" class="form-control" placeholder="Collage name" value="" />
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="Password" > Password:</label><br>
@@ -160,10 +161,10 @@
                             <table class="table table-borderless" style="width: 100%;">
                                 <tr>
                                     <td>
-                                        <input type="submit" class="btnSignup"  value="Signup"/>
+                                        <input type="submit" class=" btn btn-primary btnSignup"  value="Signup"/>
                                     </td>
                                     <td>
-                                        <a href="./login.html"><input type="button" class="btnLogin"  value="Login"/></a>
+                                        <a href="./login.html"><input type="button" class=" btn btn-primary btnLogin"  value="Login"/></a>
                                     </td>
                                 </tr>
                             </table>
